@@ -1,28 +1,37 @@
 /*------------------------------------*\
     VARS.SCSS
 \*------------------------------------*/
-/**
- * Any variables you find set in inuit.css’ `_vars.scss` that you do not wish to
- * keep, simply redefine here. This means that if inuit.css, for example, sets
- * your `$base-font-size` at 16px and you wish it to be 14px, simply redeclare
- * that variable in this file. inuit.css ignores its own variables in favour of
- * using your own, so you can completely modify how inuit.css works without ever
- * having to alter the framework itself.
- */
 
 
+/*------------------------------------*\
+    $REED-HILL CUSTOM VARS
+\*------------------------------------*/
+$brand-dark-gray: 		#323132;//used on header
+$brand-off-white:			#D1D2D4;//header and navigation
+$brand-light-gray:		#58585B;
+$brand-light-footer:	#808284;
+$brand-light-text:		#A7A9AB;
+$brand-hr-gray:				#4E4F53;
+$brand-red:						#ED1C24;
 
+$wrapper-width:				980px;
 
+/*------------------------------------*\
+    $OVERRIDES
+\*------------------------------------*/
+
+$base-font-size:    16px!default;
+$base-line-height:  24px!default;
+$base-font-family:  sans-serif!default;
+$base-ui-color:     #ccc!default;
+$brand-color:       #4a8ec2!default;
+$brand-face:        "Helvetica Neue", sans-serif!default;
+$brand-round:        4px!default;
 
 /*------------------------------------*\
     $OBJECTS-AND-ABSTRACTIONS
 \*------------------------------------*/
-/**
- * All of inuit.css’ objects and abstractions are initially turned off by
- * default. This means that you start any project with as little as possible,
- * and introducing objects and abstractions is as simple as switching the
- * following variables to `true`.
- */
+
 $use-grids:         false;
 $use-flexbox:       false;
 $use-columns:       false;
@@ -49,23 +58,3 @@ $use-stats:         false;
 $use-greybox:       false;
 
 
-
-
-
-/*------------------------------------*\
-    $OVERRIDES
-\*------------------------------------*/
-/**
- * Place any variables that should override inuit.css’ defaults here.
- */
-
-
-
-
-
-/*------------------------------------*\
-    $CUSTOM
-\*------------------------------------*/
-/**
- * Place any of your own variables that sit on top of inuit.css here.
- */
