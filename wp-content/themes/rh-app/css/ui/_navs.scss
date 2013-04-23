@@ -3,7 +3,16 @@
 \*------------------------------------*/
 
 header.masthead{
-	width: 100%;
 	min-height: 86px;
 	background: $brand-dark-gray;
+	h1.page-title{
+		>span.active{
+			color: $brand-off-white;
+			text-transform: uppercase;
+		}
+		>span.inactive{
+			color: $brand-light-gray;
+			text-transform: lowercase;
+		}
+	}
 }

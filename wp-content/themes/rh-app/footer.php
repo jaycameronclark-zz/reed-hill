@@ -1,9 +1,10 @@
+		<div class="grid__item one--whole">
+			<footer id="footer" class="source-org vcard copyright">
+				<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
+			</footer>
+		</div>
 
-		<footer id="footer" class="source-org vcard copyright">
-			<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
-		</footer>
-
-	</div>
+	</div><!--end grid-->
 
 	<?php wp_footer(); ?>
 

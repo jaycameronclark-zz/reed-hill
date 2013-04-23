@@ -8,16 +8,13 @@ body.stretched-background {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-.wrapper{
-	width: $wrapper-width;
-	margin: 0 auto;
+  max-width: $wrapper-width;
+  margin: 22px auto;
+  padding: 0 22px;
 }
 
 section{
 	&.main-container{
-		width: 100%;
 		min-height: 504px;
 		background: $brand-dark-gray;
 	}

@@ -6,7 +6,7 @@
 /*------------------------------------*\
     $REED-HILL CUSTOM VARS
 \*------------------------------------*/
-$brand-dark-gray: 		#323132;//used on header
+$brand-dark-gray: 		#191919;//used on header
 $brand-off-white:			#D1D2D4;//header and navigation
 $brand-light-gray:		#58585B;
 $brand-light-footer:	#808284;
@@ -20,8 +20,16 @@ $wrapper-width:				980px;
     $OVERRIDES
 \*------------------------------------*/
 
+$debug-mode:        false!default;
+$responsive:        true!default;
+$responsive-extra:  true!default;
+
+$lap-start:         481px!default;
+$desk-start:        1024px!default;
+$desk-wide-start:   1200px!default;
+
 $base-font-size:    16px!default;
-$base-line-height:  24px!default;
+$base-line-height:  8px!default;
 $base-font-family:  sans-serif!default;
 $base-ui-color:     #ccc!default;
 $brand-color:       #4a8ec2!default;
@@ -32,7 +40,7 @@ $brand-round:        4px!default;
     $OBJECTS-AND-ABSTRACTIONS
 \*------------------------------------*/
 
-$use-grids:         false;
+$use-grids:         true;
 $use-flexbox:       false;
 $use-columns:       false;
 $use-nav:           false;
