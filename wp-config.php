@@ -14,7 +14,7 @@
  * @package WordPress
  */
 
-Pagoda app
+//Pagoda app
 define('DB_NAME', 'rh-app');
 define('DB_USER', 'shakita');
 define('DB_PASSWORD', 'gvpAfPFY');
