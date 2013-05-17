@@ -6,15 +6,15 @@
 /*------------------------------------*\
     $REED-HILL CUSTOM VARS
 \*------------------------------------*/
-$brand-dark-gray: 		#191919;//used on header
-$brand-off-white:			#D1D2D4;//header and navigation
-$brand-light-gray:		#58585B;
-$brand-light-footer:	#808284;
-$brand-light-text:		#A7A9AB;
-$brand-hr-gray:				#4E4F53;
-$brand-red:						#ED1C24;
+$brand-dark-gray: 		#201E1F;//used on header
+$brand-off-white:			#D0D2D3;//header and navigation
+$brand-light-gray:		#58595B;
+$brand-light-footer:	#808184;
+$brand-light-text:		#A6A8AB;
+$brand-hr-gray:				#4D5054;
+$brand-red:						#EC1C24;
 
-$wrapper-width:				980px;
+$wrapper-width:				1024px;
 
 /*------------------------------------*\
     $OVERRIDES
@@ -29,12 +29,32 @@ $desk-start:        1024px!default;
 $desk-wide-start:   1200px!default;
 
 $base-font-size:    16px!default;
-$base-line-height:  8px!default;
+$base-line-height:  6px!default;
 $base-font-family:  sans-serif!default;
 $base-ui-color:     #ccc!default;
 $brand-color:       #4a8ec2!default;
 $brand-face:        "Helvetica Neue", sans-serif!default;
 $brand-round:        4px!default;
+
+$push:              true!default;
+/**
+ * Note: `$push` variable above must be set to true before enabling these.
+ */
+$palm-push:         true!default;
+$lap-push:          true!default;
+$lap-and-up-push:   true!default;
+$portable-push:     true!default;
+$desk-push:         true!default;
+
+$pull:              true!default;
+/**
+ * Note: `$pull` variable above must be set to true before enabling these.
+ */
+$palm-pull:         true!default;
+$lap-pull:          true!default;
+$lap-and-up-pull:   true!default;
+$portable-pull:     true!default;
+$desk-pull:         true!default;
 
 /*------------------------------------*\
     $OBJECTS-AND-ABSTRACTIONS
@@ -61,7 +81,7 @@ $use-sprite:        false;
 $use-icon-text:     false;
 $use-beautons:      false;
 $use-lozenges:      false;
-$use-rules:         false;
+$use-rules:         true;
 $use-stats:         false;
 $use-greybox:       false;
 

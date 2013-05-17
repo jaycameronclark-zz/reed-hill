@@ -15,8 +15,12 @@
 /* trigger when page is ready */
 $(document).ready(function (){
 
-	// your functions go here
+$("#shadow").css("height", $(document).height()).hide();
 
+	$(".tile").click(function(){
+		$("#shadow").toggle();
+		$(".tile").css("z-index", "2000");
+	});
 });
 
 

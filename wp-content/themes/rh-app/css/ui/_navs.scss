@@ -3,16 +3,35 @@
 \*------------------------------------*/
 
 header.masthead{
-	min-height: 86px;
+	height: 86px;
 	background: $brand-dark-gray;
-	h1.page-title{
-		>span.active{
+	.page-title{
+		font-size: 21px;
+		a.active{
 			color: $brand-off-white;
 			text-transform: uppercase;
+			text-decoration: none;
+			padding: 0;
 		}
-		>span.inactive{
+		a.inactive{
 			color: $brand-light-gray;
 			text-transform: lowercase;
+			text-decoration: none;
+			padding: 0;
+		}
+	}
+	nav{
+		display: block;
+		ul{
+			list-style-type: none;
+		}
+		li{
+			display: inline-block;
+			*display: inline;
+		}
+		hr{
+			border: none;
+			border-bottom: dashed 1px $brand-hr-gray;
 		}
 	}
 }

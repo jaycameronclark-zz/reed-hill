@@ -34,6 +34,28 @@
  *
  */
 
+/**
+ * Would you like Sass’ silent classes, or regular CSS classes?
+ */
+$use-silent-classes:    false!default;
+
+$class-type:            unquote(".");
+
+@if $use-silent-classes == true{
+    $class-type:        unquote("%");
+}
+
+/**
+ * Gutterless grids have all the properties of regular grids, minus any spacing.
+ * Extends `.grid`.
+ */
+#{$class-type}grid--full{
+    margin-left:0;
+
+    > #{$class-type}grid__item{
+        padding-left:0;
+    }
+}
 
 /**
  * Grid wrapper

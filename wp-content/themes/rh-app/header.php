@@ -31,21 +31,25 @@
 </head>
 
 <body class="stretched-background">
-	<div class="grid">
+	<div class="grid--full">
 		<div class="grid__item one-whole palm--one-whole">
-			<header id="header" role="header" class="masthead">
-
+			<header class="masthead" id="header" role="header">
 				<div class="grid__item one-quarter">
-					<a href=""><img class="" src="<?php bloginfo( 'template_directory' ); ?>/_/images/rh-logo-60x60.png"></a>
-				</div>
+					<a href=""><img class="push--two-twelfths" src="<?php bloginfo( 'template_directory' ); ?>/_/images/rh-logo-60x60.png"></a>
+				</div><!--
 
-				<div class="">
-					<nav id="nav" role="navigation">
-						<h1 class="page-title"><span class="active">Work</span><span class="inactive">Shop</span></h1>
+				--><div class="grid__item three-quarters">
+					<nav class="push--top" id="nav" role="navigation">
+						<div class="page-title">
+							<a class="active" href="">Work</a>
+							<a class="inactive" href="">Shop</a>
+						</div>
+						<hr>
 						<?php wp_nav_menu( array('menu' => 'primary') ); ?>
 					</nav>
 				</div>
-
 			</header>
 		</div>
+	</div>
+
 
