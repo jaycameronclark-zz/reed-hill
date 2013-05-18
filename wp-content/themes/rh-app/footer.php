@@ -1,7 +1,7 @@
 	<div class="grid--full">	
 		<div class="grid__item one--whole">
 			<footer id="footer" class="push--top">
-				<div class="grid__item one-quarter float--right">
+				<div class="grid__item one-quarter palm-one-whole float--right">
 					<div class="float--right push--top">
 						<p class="brand-red text--right">+1.720.318.2545</p>
 						<p class="footer-copyright text--right">&copy; 2003 - <?php echo date("Y"); echo " "; ?> Reed Hill LLC / All rights reserved</p>

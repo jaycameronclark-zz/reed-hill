@@ -1,0 +1,8 @@
+@include media-query(palm){
+	header.masthead{
+		.push--two-twelfths{
+			margin-left: 0!important;
+			left: 0!important;
+		}
+	}
+}

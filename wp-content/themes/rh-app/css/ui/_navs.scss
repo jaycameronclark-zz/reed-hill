@@ -6,22 +6,35 @@ header.masthead{
 	height: 86px;
 	background: $brand-dark-gray;
 	.page-title{
-		font-size: 21px;
 		
-		a.active{
-			color: $brand-off-white;
-			text-transform: uppercase;
-			text-decoration: none;
+		ul{
+			list-style-type: none;
+			margin: 0;
 			padding: 0;
 		}
-		a.inactive{
-			color: $brand-light-gray;
-			text-transform: lowercase;
-			text-decoration: none;
-			padding: 0;
+		li{
+			margin: 0;
+			display: inline-block;
+			*display: inline;
+			a.active{
+				font-size: 21px;
+				color: $brand-off-white;
+				text-transform: uppercase;
+				text-decoration: none;
+				padding: 0;
+			}
+			a.inactive{
+				font-size: 21px;
+				color: $brand-light-gray;
+				text-transform: lowercase;
+				text-decoration: none;
+				padding: 0;
+			}
 		}
-		a:last-child{
-			margin-left: -4px;
+		&:last-child{
+			a{
+				margin-left: -2px;
+			}
 		}
 	}
 	nav{
