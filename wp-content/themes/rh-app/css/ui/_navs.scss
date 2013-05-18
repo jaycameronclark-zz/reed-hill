@@ -7,6 +7,7 @@ header.masthead{
 	background: $brand-dark-gray;
 	.page-title{
 		font-size: 21px;
+		
 		a.active{
 			color: $brand-off-white;
 			text-transform: uppercase;
@@ -19,21 +20,54 @@ header.masthead{
 			text-decoration: none;
 			padding: 0;
 		}
+		a:last-child{
+			margin-left: -4px;
+		}
 	}
 	nav{
 		display: block;
 		margin-top: 18px;
 		ul{
 			list-style-type: none;
-			margin: 0;
+			margin-top: $base-line-height / 2;
+			margin-left: 2px;
 		}
 		li{
-			margin: 0;
+			margin-right: 6px;
 			display: inline-block;
 			*display: inline;
+			text-transform: lowercase;
+			a{
+				font-size: .8em;
+				text-decoration: none;
+				color: $brand-light-navs;
+
+			}
+			&.current_page_item{
+				a {
+					font-size: .6em;
+					color: #ffffff;
+					text-transform: uppercase!important;
+				}
+			}
+		}
+		.locations{
+			ul{
+				list-style-type: none;
+			}
+			li{
+				display: inline-block;
+				*display: inline;
+				margin-right: 0;
+				a{
+					text-transform: uppercase!important;
+					color: $brand-light-gray;
+					
+				}
+			}
 		}
 		hr{
-			margin-top: 10px;
+			//margin-top: $base-line-height / 2;
 			border: none;
 			border-bottom: dashed 1px $brand-hr-gray;
 		}

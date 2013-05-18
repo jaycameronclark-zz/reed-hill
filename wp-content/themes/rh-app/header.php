@@ -33,19 +33,32 @@
 	<div class="grid--full">
 		<div class="grid__item one-whole palm--one-whole">
 			<header class="masthead" id="header" role="header">
-				<div class="grid__item one-quarter">
+				<div class="grid__item two-eighths">
 					<a class="push--two-twelfths" href="">
 						<img src="<?php bloginfo( 'template_directory' ); ?>/_/images/rh-logo-60x60.png">
 					</a>
 				</div><!--
 
-			--><div class="grid__item seven-tenths">
+			--><div class="grid__item six-eighths soft--right">
 					<nav id="nav" role="navigation">
-						<div class="page-title flush--left">
-							<a class="active" href="">Work</a>
-							<a class="inactive" href="">Shop</a>
+						<div class="grid--full">
+							<div class="grid__item one-quarter">
+								<div class="page-title flush--left">
+									<a class="active" href="#">Work</a>
+									<a class="inactive" href="#">Shop</a>
+								</div>
+							</div><!--
+
+							--><div class="grid__item three-quarters">
+								<div class="float--right push--right locations">
+									<ul>
+										<li><a href="#">DEN</a></li>
+										<li><a href="#">PHX</a></li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<hr>
+						<hr class="push--right">
 							<?php wp_nav_menu( array('menu' => 'primary') ); ?>
 					</nav>
 				</div>
