@@ -15,15 +15,13 @@ body.stretched-background {
 
 section{
 	&.main-container{
-    padding: 14px;
-		min-height: 504px;
+    margin-top: $base-line-height / 2;
+    padding: $base-line-height - 2;
+    height: auto;
 		background: $brand-dark-gray;
-      >.tile{
-        padding: 0;
-        margin: 0;
-        margin-left: -3px;
-        margin-bottom: 1px;
-        //border: 1px solid #ccc;
+      .tile{
+        line-height: 0;
+        padding: 1px;
       }
 	}
 }

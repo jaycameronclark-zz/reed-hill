@@ -22,14 +22,18 @@ header.masthead{
 	}
 	nav{
 		display: block;
+		margin-top: 18px;
 		ul{
 			list-style-type: none;
+			margin: 0;
 		}
 		li{
+			margin: 0;
 			display: inline-block;
 			*display: inline;
 		}
 		hr{
+			margin-top: 10px;
 			border: none;
 			border-bottom: dashed 1px $brand-hr-gray;
 		}

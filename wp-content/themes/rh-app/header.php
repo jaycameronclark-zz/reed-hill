@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html class="no-js">
 
 <head data-template-set="rh-app-theme">
@@ -35,17 +34,19 @@
 		<div class="grid__item one-whole palm--one-whole">
 			<header class="masthead" id="header" role="header">
 				<div class="grid__item one-quarter">
-					<a href=""><img class="push--two-twelfths" src="<?php bloginfo( 'template_directory' ); ?>/_/images/rh-logo-60x60.png"></a>
+					<a class="push--two-twelfths" href="">
+						<img src="<?php bloginfo( 'template_directory' ); ?>/_/images/rh-logo-60x60.png">
+					</a>
 				</div><!--
 
-				--><div class="grid__item three-quarters">
-					<nav class="push--top" id="nav" role="navigation">
-						<div class="page-title">
+			--><div class="grid__item seven-tenths">
+					<nav id="nav" role="navigation">
+						<div class="page-title flush--left">
 							<a class="active" href="">Work</a>
 							<a class="inactive" href="">Shop</a>
 						</div>
 						<hr>
-						<?php wp_nav_menu( array('menu' => 'primary') ); ?>
+							<?php wp_nav_menu( array('menu' => 'primary') ); ?>
 					</nav>
 				</div>
 			</header>
