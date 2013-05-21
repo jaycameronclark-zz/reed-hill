@@ -34,7 +34,7 @@
 		<div class="grid__item one-whole palm--one-whole">
 			<header class="masthead" id="header" role="header">
 				<div class="grid__item two-eighths">
-					<a class="push--two-twelfths push--palm-one-twelfth" href="">
+					<a class="push--two-twelfths push--palm-one-twelfth" href="<?php bloginfo('url'); ?>">
 						<img src="<?php bloginfo( 'template_directory' ); ?>/_/images/rh-logo-60x60.png">
 					</a>
 				</div><!--
@@ -44,24 +44,29 @@
 						<div class="grid--full">
 							<div class="grid__item one-quarter palm-one-half">
 								<div class="page-title flush--left">
-									<ul>
-										<li><a class="active" href="#">Work</a></li>
-										<li><a class="inactive" href="#">Shop</a></li>
-									</ul>
+									<?php wp_nav_menu( array('theme_location' => 'primary') ); ?>
 								</div>
 							</div><!--
 
 							--><div class="grid__item three-quarters palm-one-half">
 								<div class="float--right push--right locations">
-									<ul>
-										<li><a href="#">DEN</a></li>
-										<li><a href="#">PHX</a></li>
-									</ul>
+									<?php wp_nav_menu( array('theme_location' => 'locations') ); ?>
 								</div>
 							</div>
 						</div>
 						<hr class="push--right">
-							<?php wp_nav_menu( array('menu' => 'primary') ); ?>
+						<?php if (is_page('work') || $post->post_parent == '22') { ?>
+
+							<?php wp_nav_menu( array('theme_location' => 'work') ); ?>
+
+						<?php } elseif (is_page('shop') || $post->post_parent == '26') { ?>
+
+							<?php wp_nav_menu( array('theme_location' => 'shop') ); ?>
+						
+						<?php } elseif (is_page('about') || is_page('contact')  ) { ?>
+						<hr class="push--right">
+							<?php wp_nav_menu( array('theme_location' => 'about') ); ?>
+						<?php } ?>
 					</nav>
 				</div>
 			</header>

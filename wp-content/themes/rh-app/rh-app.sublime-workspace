@@ -1,0 +1,1562 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ba",
+				"baseline"
+			],
+			[
+				"lists",
+				"list-style-type"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"nav",
+				"navActive"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"pos",
+				"pos-r	position: relative;"
+			],
+			[
+				"mr",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"fi",
+				"font-size"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"backgroun",
+				"background-size"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"l",
+				"letter-spacing"
+			],
+			[
+				"border-radius",
+				"border-bottom-left-radius"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"lau",
+				"launchEachModal"
+			],
+			[
+				"la",
+				"launchIt"
+			],
+			[
+				"mod",
+				"modalId"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"se",
+				"sell-it"
+			],
+			[
+				"sell",
+				"sell-it"
+			],
+			[
+				"b",
+				"buy-it"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"base",
+				"baseLineHeight"
+			],
+			[
+				"te",
+				"textarea"
+			],
+			[
+				"gray",
+				"grayLighter"
+			],
+			[
+				"in",
+				"inherit"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"no",
+				"no-margin"
+			],
+			[
+				"marin",
+				"margin-top"
+			],
+			[
+				"span",
+				"span1"
+			],
+			[
+				"fir",
+				"first-child"
+			],
+			[
+				"fis",
+				"first-child"
+			],
+			[
+				"adju",
+				"adjustHeight"
+			],
+			[
+				"ad",
+				"adjustHeight"
+			],
+			[
+				"il",
+				"inline-block"
+			],
+			[
+				"sma",
+				"smallFontSize"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"btn",
+				"btnbuy"
+			],
+			[
+				"gra",
+				"grayLighter"
+			],
+			[
+				"f",
+				"false"
+			],
+			[
+				"re",
+				"removeClass"
+			],
+			[
+				"s",
+				"sell-it"
+			],
+			[
+				"as",
+				"addClass"
+			],
+			[
+				"bt",
+				"btnsell"
+			],
+			[
+				"c",
+				"chevron"
+			],
+			[
+				"to",
+				"toggleClass"
+			],
+			[
+				"sl",
+				"select"
+			],
+			[
+				"pull",
+				"pull-right"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"ne",
+				"neutral"
+			],
+			[
+				"buy",
+				"buy-it"
+			],
+			[
+				"mi",
+				"middle"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"blue",
+				"blueDark"
+			],
+			[
+				"gre",
+				"greenDark"
+			],
+			[
+				"gree",
+				"greenLight"
+			],
+			[
+				"blu",
+				"blueLight"
+			],
+			[
+				"rad",
+				"radio2"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"mari",
+				"margin-top"
+			],
+			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"prom",
+				"promo-left"
+			],
+			[
+				"Ar",
+				"Arial, Helvetica, sans-serif"
+			],
+			[
+				"t",
+				"text-bottom"
+			],
+			[
+				"top",
+				"text-top"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"na",
+				"nav-text"
+			],
+			[
+				"fade",
+				"fadeOut"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"fad",
+				"fadeOut"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"dis",
+				"dismiss"
+			],
+			[
+				"bak",
+				"background-position"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"pix",
+				"pix_form_demo"
+			],
+			[
+				"erro",
+				"error_container"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"img",
+				"img	exp:ed_imageresizer"
+			],
+			[
+				"vertical",
+				"vertical-align"
+			],
+			[
+				"verti",
+				"vertical-align"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"j",
+				"javascript"
+			],
+			[
+				"displa",
+				"display	display: inline"
+			],
+			[
+				"list-style",
+				"list-style-type"
+			],
+			[
+				"webkit",
+				"webkit-background-size"
+			],
+			[
+				"border-bo",
+				"border-bottom"
+			],
+			[
+				"bot",
+				"bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "css/ui/_page.scss",
+			"settings":
+			{
+				"buffer_size": 1005,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 2228,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 1870,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/ui/_navs.scss",
+			"settings":
+			{
+				"buffer_size": 1563,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 787,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Enable Package"
+			],
+			[
+				"packa",
+				"Package Control: Enable Package"
+			],
+			[
+				"pack",
+				"Package Control: Discover Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 302.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/inuit.css/generic/_push.scss",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/ui/responsive.scss",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/inuit.css/generic/_mixins.scss",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/footer.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/inuit.css/generic/_widths.scss",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/inuit.css/generic/_helper.scss",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/_vars.scss",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/header.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/page.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/ui/_navs.scss",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/ui/_page.scss",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/index.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/watch",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-config.php",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/less/custom.less",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/13d-1-enter-ad.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/less/navbar.less",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/less/responsive-767px-max.less",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/13d-enter-another.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/13c-full-free-ads.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/13c-1-preview-find-buyer.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/13b-discontinue.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/13a-continue.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/1-d-tell-sellers.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/1-d-1-tell-seller.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/13e-1-interested-buyer.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/index-any.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/index-75.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/index-500.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/index-50.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/index-300.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/index-25.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/index-200.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/index-1000.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/index-100.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/index-10.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/9d.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/9d-1.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/9c-reg-cr-card.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/9c-1-cr-card-error.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/9b-4-login-error.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/9b-3-login-error.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/9b-2-cr-card-login.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/9a-contact-buyer.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/8d-my-ads.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/8c-for-sale.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/8b-wanted.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/8a-acct-no-cr-card.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/8a-5-password-error.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/8a-4-password-error.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/8a-3-cr-card-chge.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/8a-2-cr-card-error.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/8a-1-acct-w-cr-card.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/8-full-your-activities.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/7f-conf-password-reset.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/7e-enter-new-password.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/7e-1-password-error.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/7c-full-important.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/7b-password-reset.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/7b-1-reset-error.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/7a-new-login-register.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/7a-2-login-error.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/7a-1-login-error.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/5c-fees.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/5b-privacy.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/5a-full-how-works.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/5-full-pg-about.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/3-4-discontinue.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/2g-full-pg-conf-cont-buyers.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/2f-full-pg-not-int-buyers.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/2e-full-pg-conf-to-buyers.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/2e-1-full-pg-conf-to-buyer.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/2d-tell-buyers.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/2d-1-tell-buyer.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/2c-buyer-results.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/2c-1-buyer-results-single.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/2b1-full-add-photo.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/1g-full-pg-conf-cont-sellers.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/1f-full-pg-not-int-sellers.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/1c1-search-results-single.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/1c-search-results.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/1a-home.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/1a-1-new-search.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/18a-full-reg-confirm.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/17c-spam-confirm.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/17b-report-spam.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/17a-contact-confirm.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/17-full-contact-us.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/15-full-terms-cond.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/14-full-secure-trans.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/13f-ad-sent-buyers.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/13f-1-sent-buyer.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/13e-interested-buyers.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/js/flippit.js",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/js/lightbox.js",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/less/bootstrap.less",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/less/viewer.less",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/css/viewer.css",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/less/tables.less",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/sitemap.html",
+		"/Users/jaycameronclark/Sites/RH/flippit-development/13f-ad-sent.html",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/less/animation.less",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/custom-software-show-stopper.php",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/js/trimbleConnected.js",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/uploads/edge_suite/project/trimble-anim-4_12/trimble-anim-4_edgeActions.js",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/uploads/edge_suite/project/trimble-anim-4_11/trimble-anim-4_edgeActions.js",
+		"/Users/jaycameronclark/Sites/Trimble/wp-config.php",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected2/less/animation.less",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected2/js/trimbleConnected.js",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected2/functions.php",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected2/custom-software-show-stopper.php",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/style.css",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/less/main.less",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/twentytwelve/style.css",
+		"/Users/jaycameronclark/Desktop/animations/animation-4/trimble-anim-4_edgeActions.js",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/uploads/edge_suite/project/trimble-anim-4_10/trimble-anim-4_edgeActions.js",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/uploads/edge_suite/project/trimble-anim-4_9/trimble-anim-4_edgeActions.js",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/uploads/edge_suite/project/trimble-anim-4_8/trimble-anim-4_edgeActions.js",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/uploads/edge_suite/project/trimble-anim-4_7/trimble-anim-4_edgeActions.js",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/header.php",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/less/custom.less",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/functions.php",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/footer.php",
+		"/Users/jaycameronclark/Library/Application Support/Sublime Text 2/Packages/User/JavaScript.sublime-settings",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/js/trimbleConnected-ck.js",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/custom-costs-increase.php",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/custom-rework.php",
+		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/custom-work-stops.php"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<project>",
+			"/Users/jaycameronclark/Sites/RH/flippit-development",
+			"<project>",
+			"/Users/jaycameronclark/Sites/RH/flippit",
+			"<project>",
+			"/Users/jaycameronclark/Sites/RH/flippit",
+			"<project>",
+			"/Users/jaycameronclark/Sites/RH/flippit",
+			"<project>",
+			"/Users/jaycameronclark/Sites/RH/flippit/less",
+			"<project>",
+			"/Users/jaycameronclark/Sites/RH/flippit",
+			"<project>",
+			"/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_inc.group,/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_main.group,/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_notifications.group,/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_inc.group,/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_main.group,/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_notifications.group",
+			"/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_inc.group,/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_main.group,/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_notifications.group,/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_inc.group,/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_main.group",
+			"/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_inc.group,/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_main.group,/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_notifications.group,/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_inc.group",
+			"/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_inc.group,/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_main.group,/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_notifications.group",
+			"/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_inc.group,/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_main.group",
+			"/Users/jaycameronclark/Sites/sagevida/templates/membership/default_site/mbr_inc.group"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"whole",
+			"tagline",
+			"<span class=\"tagline\">Connecting buyers and<br /> sellers of almost anything&trade;</span></a>",
+			"viewer",
+			"1200",
+			"<br>",
+			"13",
+			"live",
+			"galW",
+			"marginLefty",
+			"plus",
+			"Stage",
+			"http://connectedsite.com",
+			"preloader",
+			"http://connectedsite.com/wp-content/themes/trimbleconnected/animations/animation-1/",
+			"image",
+			"img",
+			"imaage",
+			"10",
+			"checkbox",
+			".4777",
+			"main-search",
+			"span6",
+			"</div>",
+			"<div>",
+			"</div>",
+			"<div>",
+			"float",
+			"float: right;",
+			"span12",
+			"</div>",
+			"<div>",
+			"</div>",
+			"<div class=\"row-fluid\">",
+			"input-small",
+			"btn-margin-bottom",
+			"btn-margin-bottome",
+			"slicepoint",
+			"slicpoint",
+			"many",
+			"br",
+			"Copyright 2012",
+			"a",
+			"#303030",
+			"placeholder",
+			"<!--main search-->\n  <div class=\"row-fluid\">\n    <div class=\"span12\">\n      <div class=\"well well-large well-gradient\">\n        <div class=\"row-fluid\">\n          <form>",
+			">",
+			"margin-right",
+			"no-auth",
+			"<ul class=\"nav pull-right nav-block>",
+			"<ul class=\"nav pull-right nav-block",
+			"<ul class=\"nav pull-right\">",
+			"auth",
+			"</a>",
+			"<a href=\"#\">",
+			"</button>",
+			"auth",
+			"ul",
+			"auth",
+			"css",
+			"1c-search-results.html",
+			"input-append",
+			"email",
+			"9c-1-cr-card-error",
+			"span12",
+			"label",
+			"span",
+			"label",
+			"last",
+			"div",
+			"input-append",
+			"control-label",
+			"inline",
+			"span6",
+			"16",
+			"14",
+			"20",
+			"Change",
+			"p",
+			"skylec24_meva",
+			"table",
+			"form-inline",
+			"lightbox3",
+			"lightbox2",
+			"jpg",
+			"lightbox2.jpg",
+			"<a class=\"brand pull-left\" href=\"1a-1-new-search.html\"><img class=\"logo\" src=\"images/logo-144x50.png\" title=\"flippit&trade;\" width=\"144\" height=\"50\" alt=\"flippit logo\">",
+			"modal-backdrop",
+			".navbar ul.nav",
+			"6",
+			"12",
+			"button",
+			"p",
+			"legend",
+			"legend>",
+			"h5",
+			"span12",
+			"span5",
+			"&",
+			">",
+			"block",
+			"uneditable-input",
+			"<img class=\"logo\" src=\"images/logo-144x50.png\" title=\"flippit&trade;\" width=\"144\" height=\"50\" alt=\"flippit logo\">",
+			"<link href=\"css/responsive.css\" rel=\"stylesheet\">",
+			"<link href=\"css/bootstrap.css\" rel=\"stylesheet\">",
+			"RH | flippit",
+			"<!-- Placed at the end of the document so pages load faster -->\n<script src=\"js/jquery.js\"></script>\n<script src=\"js/modernizer.js\"></script>\n<script src=\"js/flippit-dropdown.js\"></script>\n<script src=\"js/flippit-collapse.js\"></script>\n<script src=\"js/flippit-button-ck.js\"></script>\n<script src=\"js/flippit-transition.js\"></script>\n<script src=\"js/flippit-ck.js\"></script><!--custom stuff-->\n<script src=\"js/lightbox.js\"></script><!--for text lightbox-->\n<script src=\"js/expander.js\"></script><!--for text truncation-->\n<script> $('p.expander').expander({ });</script><!--for text truncation-->",
+			"<!-- Placed at the end of the document so pages load faster -->\n<script src=\"js/jquery.js\"></script>\n<script src=\"js/modernizer.js\"></script>\n<script src=\"js/bootstrap-dropdown.js\"></script>\n<script src=\"js/bootstrap-collapse.js\"></script>\n<script src=\"js/bootstrap-button-ck.js\"></script>\n<script src=\"js/bootstrap-transition.js\"></script>\n<script src=\"js/flippit-ck.js\"></script><!--custom stuff-->\n<script src=\"js/lightbox.js\"></script><!--for text lightbox-->\n<script src=\"js/expander.js\"></script><!--for text truncation-->\n<script> $('p.expander').expander({ });</script><!--for text truncation-->",
+			"bootstrap",
+			"class=\"input-large",
+			"50",
+			"W",
+			"placeholder",
+			"<img class=\"logo\" src=\"images/logo-144x50.png\" title=\"flippit&trade;\" width=\"\" height=\"\" alt=\"flippit logo\">",
+			"10-25",
+			"Run ",
+			"Run W/in",
+			"2d",
+			"1e",
+			"search-results-single.html",
+			"Run ",
+			"black",
+			"              <select class=\"span3 mainsearch half\">\n                <option>Run W/in 10-25 mi.</option>\n                <option>Run W/in 50 mi.</option>\n                <option>Run W/in 75 mi.</option>\n                <option>Run W/in 100 mi.</option>\n                <option>Run W/in 200 mi.</option>\n                <option>Run W/in 300 mi.</option>\n                <option>Run W/in 500 mi.</option>\n                <option>Run W/in 1000 mi.</option>\n                <option>Run W/in Any</option>\n              </select>",
+			"<p>",
+			"<!--footer content-->\n<div class=\"row-fluid\">\n  <div class=\"footer-well\">\n    <div class=\"span3 pull-left\">\n      <p class=\"footer\">\n        <span class=\"text-green\">flipp</span><span class=\"text-blue\">it</span>\n      <p class=\"footer\">\n        The search engine that connects<br> buyers and sellers of almost anything&trade;<br><br>\n        &copy; Copyright 2012, flippit.com\n      </p>\n      </div>\n        <div class=\"span2 pull-right\">\n          <a href=\"/\"><img class=\"pull-right social\" src=\"images/facebook.png\" width=\"20\" height=\"20\" alt=\"facebook\"></a> \n          <a href=\"/\"><img class=\"pull-right social\" src=\"images/twitter.png\" width=\"20\" height=\"20\" alt=\"twitter\"></a> \n          <a href=\"/\"><img class=\"pull-right social\" src=\"images/blogger.png\" width=\"20\" height=\"20\" alt=\"blogger\"></a> \n        </div>\n      </div>\n  </div>\n</div> <!-- end container -->",
+			"remove",
+			"add",
+			"<h5>"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<span class=\"tagline\">Turn online buying and<br /> selling upside down&trade;</span></a>",
+			"Copyright 2013",
+			"<!--main search-->\n  <div class=\"row-fluid\">\n    <div class=\"span12\">\n      <div class=\"well well-large well-gradient\">\n        <div class=\"row-fluid\">\n          <form class=\"main-search-form\">",
+			"",
+			"<ul class=\"nav pull-right nav-block\">",
+			"<ul class=\"nav pull-right nav-block>",
+			"<ul class=\"nav pull-right nav-block",
+			"<a class=\"brand pull-left\" href=\"1a-1-new-search.html\"><img class=\"logo\" src=\"images/logo-142x54.png\" title=\"flippit&trade;\" width=\"142\" height=\"54\" alt=\"flippit logo\">",
+			"<img class=\"logo\" src=\"images/logo-142x54.png\" title=\"flippit&trade;\" width=\"142\" height=\"54\" alt=\"flippit logo\">",
+			"<link href=\"css/responsive.min.css\" rel=\"stylesheet\">",
+			"<link href=\"css/styles.min.css\" rel=\"stylesheet\">",
+			"flippit",
+			"<!-- Placed at the end of the document so pages load faster -->\n<script src=\"js/jquery.min.js\"></script>\n<script src=\"js/modernizer.min.js\"></script>\n<script src=\"js/flippit-dropdown.min.js\"></script>\n<script src=\"js/flippit-collapse.min.js\"></script>\n<script src=\"js/flippit-button.min.js\"></script>\n<script src=\"js/flippit-transition.min.js\"></script>\n<script src=\"js/flippit.min.js\"></script><!--custom stuff-->\n<script src=\"js/lightbox.min.js\"></script><!--for text lightbox-->\n<script src=\"js/expander.min.js\"></script><!--for text truncation-->\n<script> $('p.expander').expander({ });</script><!--for text truncation-->",
+			"<!-- Placed at the end of the document so pages load faster -->\n<script src=\"js/jquery.js\"></script>\n<script src=\"js/modernizer.js\"></script>\n<script src=\"js/flippit-dropdown.js\"></script>\n<script src=\"js/flippit-collapse.js\"></script>\n<script src=\"js/flippit-button-ck.js\"></script>\n<script src=\"js/flippit-transition.js\"></script>\n<script src=\"js/flippit-ck.js\"></script><!--custom stuff-->\n<script src=\"js/lightbox.js\"></script><!--for text lightbox-->\n<script src=\"js/expander.js\"></script><!--for text truncation-->\n<script> $('p.expander').expander({ });</script><!--for text truncation-->",
+			"<img class=\"logo\" src=\"images/logo-144x50.png\" title=\"flippit&trade;\" width=\"144\" height=\"50\" alt=\"flippit logo\">",
+			"              <select class=\"span3 mainsearch half\">\n                <option>W/in 10-25 mi.</option>\n                <option>W/in 50 mi.</option>\n                <option>W/in 75 mi.</option>\n                <option>W/in 100 mi.</option>\n                <option>W/in 200 mi.</option>\n                <option>W/in 300 mi.</option>\n                <option>W/in 500 mi.</option>\n                <option>W/in 1000 mi.</option>\n                <option>W/in Any</option>\n              </select>",
+			"<!--footer content-->\n<div class=\"row-fluid\">\n  <div class=\"footer-well\">\n    <div class=\"span4 pull-left\">\n      <p class=\"footer\">\n        <span class=\"text-green\">flipp</span><span class=\"text-blue\">it</span>\n      <p class=\"footer\">\n        The search engine that connects<br> buyers and sellers of almost anything&trade;<br><br>\n        &copy; Copyright 2012, flippit.com\n      </p>\n      </div>\n        <div class=\"span2 pull-right\">\n          <a href=\"/\"><img class=\"pull-right social\" src=\"images/facebook.png\" width=\"20\" height=\"20\" alt=\"facebook\"></a> \n          <a href=\"/\"><img class=\"pull-right social\" src=\"images/twitter.png\" width=\"20\" height=\"20\" alt=\"twitter\"></a> \n          <a href=\"/\"><img class=\"pull-right social\" src=\"images/blogger.png\" width=\"20\" height=\"20\" alt=\"blogger\"></a> \n        </div>\n      </div>\n  </div>\n</div> <!-- end container -->",
+			"<!--footer content-->\n<div class=\"row-fluid\">\n  <div class=\"footer-well\">\n    <div class=\"span4 pull-left\">\n      <p class=\"footer\"><span class=\"text-green\">flipp</span><span class=\"text-blue\">it</span></p>\n      <p class=\"footer\">The search engine that connects<br> buyers and sellers of almost anything&trade;<br><br>&copy; Copyright 2012, flippit.com</p>\n    </div>\n      <div class=\"span2 pull-right\">\n        <a href=\"/\"><img class=\"pull-right social\" src=\"images/facebook.png\" width=\"20\" height=\"20\" alt=\"facebook\"></a> \n        <a href=\"/\"><img class=\"pull-right social\" src=\"images/twitter.png\" width=\"20\" height=\"20\" alt=\"twitter\"></a> \n        <a href=\"/\"><img class=\"pull-right social\" src=\"images/blogger.png\" width=\"20\" height=\"20\" alt=\"blogger\"></a> \n      </div>\n    </div>\n  </div>\n</div><!-- end container -->",
+			"bootstrap-button-ck.js",
+			"<div class=\"row-fluid hidden-phone\">\n  <div class=\"span12\">\n    <div class=\"well well-large well-gradient\">\n      <h4>Recent Searches</h4>",
+			"<!--recent searches-->\n<div class=\"row-fluid hidden-phone\">",
+			"    <link rel=\"shortcut icon\" href=\"ico/favicon.ico\">",
+			"<!-- Placed at the end of the document so pages load faster -->\n<script src=\"js/jquery.js\"></script>\n<script src=\"js/modernizer.js\"></script>\n<script src=\"js/bootstrap-dropdown.js\"></script>\n<script src=\"js/bootstrap-collapse.js\"></script>\n<script src=\"js/bootstrap-button.js\"></script>\n<script src=\"js/bootstrap-transition.js\"></script>\n<script src=\"js/flippit-ck.js\"></script><!--custom stuff-->\n<script src=\"js/lightbox.js\"></script><!--for text lightbox-->\n<script src=\"js/expander.js\"></script><!--for text truncation-->\n<script> $('p.expander').expander({ });</script><!--for text truncation-->",
+			"    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\" />\n    <meta name=\"viewport\" content=\"target-densitydpi=medium-dpi\" />",
+			"<!--footer content-->\n<div class=\"row-fluid\">\n  <div class=\"span12\">\n\n      <div class=\"well well-large well-transparent\">\n      <div class=\"span4\">\n        <p>\n          <span class=\"flippit-text-green\">flipp</span><span class=\"flippit-text-blue\">it</span>\n        </p>\n        <p class=\"footer\">\n          The search engine that connects<br> buyers and sellers of almost anything&trade;<br>\n          &copy;Copyright, 2012 flippit.com\n        </p>\n      </div>\n        <div class=\"span2 pull-right\">\n          <a href=\"\"><img class=\"pull-right social\" src=\"images/facebook.png\" width=\"20\" height=\"20\" alt=\"facebook\"></a> \n          <a href=\"\"><img class=\"pull-right social\" src=\"images/twitter.png\" width=\"20\" height=\"20\" alt=\"twitter\"></a> \n          <a href=\"\"><img class=\"pull-right social\" src=\"images/blogger.png\" width=\"20\" height=\"20\" alt=\"blogger\"></a> \n        </div>\n        </div>\n    </div>\n  </div>\n</div> <!-- end container -->\n\n<!-- Placed at the end of the document so the pages load faster -->\n<script src=\"js/jquery.js\"></script>\n<script src=\"js/custom-chevrons.js\"></script>\n<script src=\"js/bootstrap-dropdown.js\"></script>\n<script src=\"js/bootstrap-collapse.js\"></script>\n<script src=\"js/bootstrap-button.js\"></script>\n<script src=\"js/bootstrap-transition.js\"></script>\n</body>\n</html>",
+			"      <div class=\"span4\">\n        <p>\n          <span class=\"flippit-text-green\">flipp</span><span class=\"flippit-text-blue\">it</span>\n        </p>\n        <p class=\"footer\">\n          The search engine that connects<br> buyers and sellers of almost anything&trade;<br>\n          &copy;Copyright, 2012 flippit.com\n        </p>\n      </div>",
+			"<!--footer content-->\n<div class=\"row-fluid\">\n  <div class=\"span12\">\n\n      <div class=\"well well-large well-transparent\">\n      <div class=\"span4\">\n        <p>\n          <span class=\"flippit-text-green\">flipp</span><span class=\"flippit-text-blue\">it</span>\n        </p>\n        <p class=\"footer\">\n          The search engine that connects<br> buyers and sellers of almost anything&trade;<br>\n          &copy;Copyright, 2012 flippit.com\n        </p>\n      </div>\n        <div class=\"span2 pull-right\">\n          <a href=\"\"><img class=\"pull-right social\" src=\"images/facebook.png\" width=\"20\" height=\"20\" alt=\"facebook\"></a> \n          <a href=\"\"><img class=\"pull-right social\" src=\"images/twitter.png\" width=\"20\" height=\"20\" alt=\"twitter\"></a> \n          <a href=\"\"><img class=\"pull-right social\" src=\"images/blogger.png\" width=\"20\" height=\"20\" alt=\"blogger\"></a> \n        </div>\n        </div>\n    </div>\n  </div>\n</div> <!-- end container -->",
+			"              <select class=\"span3 mainsearch\">\n                <option>Within 5 mi.</option>\n                <option>10 mi.</option>\n                <option>25 mi.</option>\n                <option>50 mi.</option>\n                <option>75 mi.</option>\n                <option>100 mi.</option>\n              </select>",
+			"<button class=\"btn btn-margin btn-black btn-med pull-right\"><i class=\"icon-white icon-user\"></i> <b class=\"caret\"></b></button></a>",
+			"            <li class=\"dropdown\">\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n              <button class=\"btn btn-margin btn-black btn-med pull-right\"><i class=\"icon-user\"></i> <b class=\"caret\"></b></button></a>\n            <ul class=\"dropdown-menu\">\n            <li><a href=\"#\">Login</a></li>\n            <li><a href=\"#\">Register</a></li>\n            </ul>\n            </li>",
+			"<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><button class=\"btn btn-margin btn-black btn-med pull-right\"><i class=\"icon-user\"></i> <b class=\"caret\"></b></button></a>",
+			"http://cbplatinumproperties.com",
+			"mbr_",
+			"mbr_inc",
+			"rmrm.net",
+			"rmrminc.net",
+			"</blockquote>",
+			"<blockquote>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "css/ui/_page.scss",
+					"settings":
+					{
+						"buffer_size": 1005,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "header.php",
+					"settings":
+					{
+						"buffer_size": 2228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2164,
+								2164
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/ExpressionEngine/ExpressionEngine.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 295.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "functions.php",
+					"settings":
+					{
+						"buffer_size": 1870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								687,
+								687
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/ExpressionEngine/ExpressionEngine.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 74.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/ui/_navs.scss",
+					"settings":
+					{
+						"buffer_size": 1563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1412,
+								1412
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 787,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/ExpressionEngine/ExpressionEngine.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.git":
+	{
+		"height": 118.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 293.0,
+	"status_bar_visible": true
+}

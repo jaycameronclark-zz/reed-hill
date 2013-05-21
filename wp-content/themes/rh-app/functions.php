@@ -20,8 +20,19 @@
     }
     add_action('init', 'removeHeadLinks');
 
-	// Custom Menu
-	register_nav_menu( 'primary', __( 'Navigation Menu', 'rh_app' ) );
+	// Custom Menus
+function register_rh_app_menus() {
+  register_nav_menus(
+    array(
+    	'primary' => __( 'Primary' ),
+      'work' => __( 'Work' ),
+      'shop' => __( 'Shop' ),
+      'locations' => __( 'Locations' ),
+      'about' => __( 'About' )
+    )
+  );
+}
+add_action( 'init', 'register_rh_app_menus' );
 
 	// Widgets
 	function rh_app_widgets_init() {
@@ -54,5 +65,13 @@
 			esc_attr( get_the_author() )
 		);
 	}
+
+	function is_tree($pid) {      // $pid = The ID of the page we're looking for pages underneath
+		global $post;         // load details about this page
+			if(is_page()&&($post->post_parent==$pid||is_page($pid))) 
+  			return true;   // we're at the page or at a sub page
+			else 
+       return false;  // we're elsewhere
+};
 
 ?>

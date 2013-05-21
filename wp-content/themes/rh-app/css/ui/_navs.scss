@@ -5,6 +5,7 @@
 header.masthead{
 	height: 86px;
 	background: $brand-dark-gray;
+//WORK \ SHOP	
 	.page-title{
 		
 		ul{
@@ -16,17 +17,26 @@ header.masthead{
 			margin: 0;
 			display: inline-block;
 			*display: inline;
-			a.active{
+			a{
+				font-size: 21px;
+				color: $brand-light-gray;
+				text-transform: lowercase;
+				text-decoration: none;
+				padding: 0;
+			}
+			&.current_page_item:first-child a,
+			&.current-page-ancestor:first-child a{
 				font-size: 21px;
 				color: $brand-off-white;
 				text-transform: uppercase;
 				text-decoration: none;
 				padding: 0;
 			}
-			a.inactive{
+			&.current_page_item:last-child a,
+			&.current-page-ancestor:last-child a{
 				font-size: 21px;
-				color: $brand-light-gray;
-				text-transform: lowercase;
+				color: $brand-off-white;
+				text-transform: uppercase;
 				text-decoration: none;
 				padding: 0;
 			}
@@ -40,6 +50,7 @@ header.masthead{
 	nav{
 		display: block;
 		margin-top: 18px;
+//MAIN NAV
 		ul{
 			list-style-type: none;
 			margin-top: $base-line-height / 2;
@@ -64,6 +75,7 @@ header.masthead{
 				}
 			}
 		}
+//LOCATIONS
 		.locations{
 			ul{
 				list-style-type: none;
@@ -75,12 +87,10 @@ header.masthead{
 				a{
 					text-transform: uppercase!important;
 					color: $brand-light-gray;
-					
 				}
 			}
 		}
 		hr{
-			//margin-top: $base-line-height / 2;
 			border: none;
 			border-bottom: dashed 1px $brand-hr-gray;
 		}
