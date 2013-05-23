@@ -3,30 +3,29 @@
 \*------------------------------------*/
 
 header.masthead{
-	height: 86px;
+	min-height: 86px;
 	background: $brand-dark-gray;
 //WORK \ SHOP	
 	.page-title{
-		
 		ul{
 			list-style-type: none;
-			margin: 0;
-			padding: 0;
+			margin: 0 0 6px 0;
 		}
 		li{
+			font-family: 'museo_sans100', sans-serif;
 			margin: 0;
 			display: inline-block;
 			*display: inline;
+
 			a{
-				font-size: 21px;
+				font-size: 20px;
 				color: $brand-light-gray;
 				text-transform: lowercase;
 				text-decoration: none;
-				padding: 0;
 			}
 			&.current_page_item:first-child a,
 			&.current-page-ancestor:first-child a{
-				font-size: 21px;
+				font-size: 20px;
 				color: $brand-off-white;
 				text-transform: uppercase;
 				text-decoration: none;
@@ -34,38 +33,37 @@ header.masthead{
 			}
 			&.current_page_item:last-child a,
 			&.current-page-ancestor:last-child a{
-				font-size: 21px;
+				font-size: 20px;
 				color: $brand-off-white;
 				text-transform: uppercase;
 				text-decoration: none;
 				padding: 0;
 			}
-		}
-		&:last-child{
-			a{
-				margin-left: -2px;
+			&:last-child{
+				a{
+					margin-left: -2px;
+				}
 			}
 		}
 	}
 	nav{
-		display: block;
 		margin-top: 18px;
 //MAIN NAV
 		ul{
 			list-style-type: none;
-			margin-top: $base-line-height / 2;
-			margin-left: 2px;
+			margin: 0 0 2px 0;
 		}
 		li{
-			margin-right: 6px;
+			margin-right: 4px;
+			margin-bottom: 4px;
 			display: inline-block;
 			*display: inline;
 			text-transform: lowercase;
 			a{
 				font-size: .8em;
+				line-height: .8em;
 				text-decoration: none;
 				color: $brand-light-navs;
-
 			}
 			&.current_page_item{
 				a {
@@ -79,8 +77,10 @@ header.masthead{
 		.locations{
 			ul{
 				list-style-type: none;
+				margin-left: 2px;
 			}
 			li{
+				font-family: 'museo_sans500', sans-serif;
 				display: inline-block;
 				*display: inline;
 				margin-right: 0;
@@ -91,6 +91,7 @@ header.masthead{
 			}
 		}
 		hr{
+			display: block;
 			border: none;
 			border-bottom: dashed 1px $brand-hr-gray;
 		}

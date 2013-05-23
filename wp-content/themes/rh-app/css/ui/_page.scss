@@ -9,15 +9,12 @@ body.stretched-background {
   -o-background-size: cover;
   background-size: cover;
   max-width: $wrapper-width;
-  margin: 22px auto;
+  margin: 44px auto;
   padding: 0 22px;
-  
-       -moz-transition: all .5s linear;
-     -webkit-transition: all .5s linear;
-     transition: all .5s linear;
 }
 
 section{
+  color: $brand-light-text;
 	&.main-container{
     margin-top: $base-line-height / 2;
     padding: $base-line-height - 2;
@@ -25,8 +22,11 @@ section{
 		background: $brand-dark-gray;
       .tile{
         line-height: 0;
-        padding: 1px;
+        padding: 0 0 1px 0;
       }
+    &.min-height{
+      min-height: $min-height;
+    }
 	}
 }
 #shadow {
@@ -38,10 +38,13 @@ section{
   z-index: 100;
 }
 footer{
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: lighter;
   .footer-copyright{
     color: $brand-light-navs;
     font-size: .5em;
+  }
+  .phone-number{
+    font-family: 'museo_sans100';
   }
 }
