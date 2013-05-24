@@ -38,6 +38,7 @@
  * Would you like Sass’ silent classes, or regular CSS classes?
  */
 $use-silent-classes:    false!default;
+$use-markup-fix:        true!default;
 
 $class-type:            unquote(".");
 
@@ -78,6 +79,12 @@ $class-type:            unquote(".");
     /**
      * Grid
      */
+    .grid__item:before{
+      content: "   "
+    }
+    .grid__item:after{
+      content: "   "
+    }
     .grid__item{
         display:inline-block;
         width:100%;
