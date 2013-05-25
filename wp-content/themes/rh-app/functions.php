@@ -36,12 +36,11 @@ add_action('login_head', 'custom_login_logo');
 /* IMAGES */
 /*-------------------------------------------------------------------------------------------*/
 if ( function_exists( 'add_theme_support' ) ) {
-    add_theme_support( 'post-thumbnails' );
-    set_post_thumbnail_size( 150, 150 ); // default Post Thumbnail dimensions   
+    add_theme_support( 'post-thumbnails' );  
 }
 
 if ( function_exists( 'add_image_size' ) ) { 
-    add_image_size( 'client-thumb', 238, 194 );
+    add_image_size( 'client-thumb', 238, 194, false );
     // add_image_size( 'featured-image', 960, 428, false );
     // add_image_size( 'small-icon-thumb', false );
     // add_image_size( 'featured-description', 292, 310, false );

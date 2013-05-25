@@ -25,9 +25,10 @@ section{
         z-index: 1;
         line-height: 0;
         padding: 0 0 1px 0;
+        border: 1px solid $brand-dark-gray;
         .title{
-          border-right: 1px solid $brand-dark-gray;
-          border-bottom: 1px solid $brand-dark-gray;
+          //border-right: 1px solid $brand-dark-gray;
+          //border-bottom: 1px solid $brand-dark-gray;
           z-index: 2;
           position: absolute;
           bottom: 0;
@@ -44,6 +45,9 @@ section{
           background: -ms-linear-gradient(left,  rgba(131,127,125,1) 0%,rgba(81,77,79,1) 23%,rgba(131,127,125,1) 48%,rgba(81,77,79,1) 76%,rgba(131,127,125,1) 100%); /* IE10+ */
           background: linear-gradient(to right,  rgba(131,127,125,1) 0%,rgba(81,77,79,1) 23%,rgba(131,127,125,1) 48%,rgba(81,77,79,1) 76%,rgba(131,127,125,1) 100%); /* W3C */
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#837f7d', endColorstr='#837f7d',GradientType=1 ); /* IE6-9 */
+          &:nth-child(4n+4){
+            border-right: none;
+          }
         }
       }
     &.min-height{
