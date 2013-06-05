@@ -53,6 +53,11 @@ header.masthead{
 			list-style-type: none;
 			margin: 0 0 2px 0;
 		}
+		ul.shop-menu{
+			li a{
+				font-size: 0.6em;
+			}
+		}
 		li{
 			margin-right: 4px;
 			margin-bottom: 4px;
@@ -65,7 +70,8 @@ header.masthead{
 				text-decoration: none;
 				color: $brand-light-navs;
 			}
-			&.current_page_item{
+			&.current_page_item,
+			&.current-page-ancestor{
 				a {
 					font-size: .6em;
 					color: #ffffff;
@@ -80,7 +86,7 @@ header.masthead{
 				margin-left: 2px;
 			}
 			li{
-				font-family: 'museo_sans500', sans-serif;
+				font-family: 'museo_sans100', sans-serif;
 				display: inline-block;
 				*display: inline;
 				margin-right: 0;

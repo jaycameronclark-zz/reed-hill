@@ -28,10 +28,8 @@ Template Name: Client
 			  while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				
 				<?php echo "-->"; ?><a href="<?php the_permalink(); ?>"><article class="grid__item one-quarter palm-one-half tile">
-				<?php	$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'client-thumb' ); ?>
-				<?php if ($image) { ?>
-    		<img src="<?php echo $image[0]; ?>" alt="" />
-				<?php } ?>
+					<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'client-thumb' ); ?>
+					<?php if ($image) { ?> <img src="<?php echo $image[0]; ?>" alt="" /> <?php } ?> 
 					<div class="title one-whole"><?php the_title(); ?></div>
 				</article></a><?php echo "<!--"; ?>
 

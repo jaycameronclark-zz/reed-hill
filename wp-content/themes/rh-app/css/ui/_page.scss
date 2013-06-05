@@ -24,7 +24,7 @@ section{
         position: relative;
         z-index: 1;
         line-height: 0;
-        padding: 0 0 1px 0;
+        padding: 0 0 0 0;
         border: 1px solid $brand-dark-gray;
         .title{
           //border-right: 1px solid $brand-dark-gray;
@@ -45,9 +45,101 @@ section{
           background: -ms-linear-gradient(left,  rgba(131,127,125,1) 0%,rgba(81,77,79,1) 23%,rgba(131,127,125,1) 48%,rgba(81,77,79,1) 76%,rgba(131,127,125,1) 100%); /* IE10+ */
           background: linear-gradient(to right,  rgba(131,127,125,1) 0%,rgba(81,77,79,1) 23%,rgba(131,127,125,1) 48%,rgba(81,77,79,1) 76%,rgba(131,127,125,1) 100%); /* W3C */
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#837f7d', endColorstr='#837f7d',GradientType=1 ); /* IE6-9 */
-          &:nth-child(4n+4){
-            border-right: none;
+        }
+      }
+      .offices{
+        position: relative;
+        z-index: 1;
+        line-height: 0;
+        padding: 0 0 0 0;
+        margin: 0;
+        .map-grid{
+          z-index: 2;
+          span{
+            width: 18px;
+            height: 18px;
+            background-image: url(./_/images/map-icon-sprite.png);
+            background-position: 0 0; 
+            i.title{
+              z-index: 5;
+              font-size: 9px;
+              font-style: normal;
+              text-transform: uppercase;
+              line-height: 27px;
+              text-align: center;
+              text-shadow: 1px 1px 1px #f8f9f9;
+              color: $brand-dark-gray;
+              margin-top: -19px;
+              margin-left: 9px;
+              width: 69px;
+              height: 29px;
+              display: block;
+              background: url(./_/images/map-titles-bg.png);
+            }
           }
+          span.star{
+            background-position: -5px 0;
+            position: absolute;
+              &:hover{
+                cursor: pointer;
+                background-position: -43px 0;
+              }
+            &.denver{
+              top: 332px;
+              left: 219px;
+            }
+            &.phoenix{
+              top: 346px;
+              left: 211px;
+            }
+          }
+
+          span.dot{
+            background-position: -24px 0;
+            position: absolute;
+              &:hover{
+                cursor: pointer;
+                background-position: -43px 0;
+              }
+            &.mexico{
+              top: 367px;
+              left: 233px;
+            }
+            &.sa-1{
+              top: 464px;
+              left: 342px;
+            }
+            &.sa-2{
+              top: 491px;
+              left: 322px;
+            }
+          }
+
+          //Main post content
+          .content{
+            position: absolute;
+            top: 60px;
+            left: 236px;
+            z-index: 6;
+            p{
+              font-size: 18px;
+              font-weight: normal;
+              font-family: museo_sans100;
+              line-height: 25px;
+            }
+            .arrow{
+              color: $brand-red;
+              font-family: museo_sans300;
+              font-size: 22px;
+              margin-left: -14px;
+              position: relative;
+              top: 14px;
+              &:before{
+                content: "\203A";
+              }
+            }
+          }
+
         }
       }
     &.min-height{
@@ -55,14 +147,7 @@ section{
     }
 	}
 }
-#shadow {
-  background-image: url(./_/images/shadow.png); 
-  position: absolute; 
-  left: 0; 
-  top: 0; 
-  width: 100%; 
-  z-index: 100;
-}
+
 footer{
   font-size: 1.1em;
   font-weight: lighter;
@@ -73,4 +158,12 @@ footer{
   .phone-number{
     font-family: 'museo_sans100';
   }
+}
+#shadow {
+  background-image: url(./_/images/shadow.png); 
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  z-index: 100;
 }

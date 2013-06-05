@@ -90,6 +90,28 @@ add_action( 'init', 'register_rh_app_menus' );
 
 
 /*-------------------------------------------------------------------------------------------*/
+/* SUBPAGE */
+/*-------------------------------------------------------------------------------------------*/
+function is_tree($pid)
+{
+  global $post;
+
+  $ancestors = get_post_ancestors($post->$pid);
+  $root = count($ancestors) - 1;
+  $parent = $ancestors[$root];
+
+  if(is_page() && (is_page($pid) || $post->post_parent == $pid || in_array($pid, $ancestors)))
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+};
+
+
+/*-------------------------------------------------------------------------------------------*/
 /* rh_pt_client Post Type */
 /*-------------------------------------------------------------------------------------------*/
 class rh_pt_client {

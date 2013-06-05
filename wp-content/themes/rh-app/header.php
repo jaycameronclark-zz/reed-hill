@@ -71,10 +71,10 @@
 							<hr class="push--right">
 							<?php wp_nav_menu( array('theme_location' => 'about') ); ?>
 						
-						<?php } elseif ( is_page('about') ) { ?>
-							<?php wp_nav_menu( array('theme_location' => 'shop') ); ?>
+						<?php } elseif ( is_tree(29) ) { ?>
+							<?php wp_nav_menu( array('theme_location' => 'shop', 'menu_class' => 'shop-menu') ); ?>
 							<hr class="push--right">
-							<?php wp_nav_menu( array('theme_location' => 'about') ); ?>
+							<?php wp_nav_menu( array('theme_location' => 'about', 'menu_class' => 'shop-sub-menu') ); ?>
 						<?php } ?>
 
 					</nav>
