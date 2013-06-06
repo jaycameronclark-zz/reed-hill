@@ -4,6 +4,7 @@
 
 header.masthead{
 	min-height: 86px;
+	height: auto;
 	background: $brand-dark-gray;
 //WORK \ SHOP	
 	.page-title{
@@ -41,7 +42,7 @@ header.masthead{
 			}
 			&:last-child{
 				a{
-					margin-left: -2px;
+					margin-left: -3px;
 				}
 			}
 		}
@@ -55,7 +56,21 @@ header.masthead{
 		}
 		ul.shop-menu{
 			li a{
+				font-size: 0.5em;
+			}
+		}
+		ul.shop-sub-menu{
+			padding-bottom: $base-line-height;
+			li{
+				margin-right: 0px;
+			}
+			li:after{
+				color: $brand-light-navs;
 				font-size: 0.6em;
+				content: " \002F";
+			}
+			li:last-child:after{
+				content: "";
 			}
 		}
 		li{
@@ -65,8 +80,8 @@ header.masthead{
 			*display: inline;
 			text-transform: lowercase;
 			a{
-				font-size: .8em;
-				line-height: .8em;
+				font-size: .7em;
+				line-height: .7em;
 				text-decoration: none;
 				color: $brand-light-navs;
 			}
@@ -90,9 +105,21 @@ header.masthead{
 				display: inline-block;
 				*display: inline;
 				margin-right: 0;
+				&.current_page_item{
+					a{
+						color: $brand-red;
+					}
+				}
 				a{
+					font-size: .8em;
 					text-transform: uppercase!important;
 					color: $brand-light-gray;
+				}
+				&:first-child:after{
+					font-size: .7em;
+					color: $brand-light-gray;
+					margin-left: 3px;
+					content:"\007C";
 				}
 			}
 		}

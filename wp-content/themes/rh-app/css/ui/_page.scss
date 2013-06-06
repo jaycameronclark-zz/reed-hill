@@ -1,13 +1,12 @@
 /*------------------------------------*\
     RH | page.scss
 \*------------------------------------*/
-
 body.stretched-background { 
-  background: url(_/images/temp-bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  // background: url(_/images/temp-bg.jpg) no-repeat center center fixed; 
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
   max-width: $wrapper-width;
   margin: 0 auto;
   padding: 0 22px;
@@ -149,14 +148,14 @@ section{
 }
 
 footer{
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: lighter;
   .footer-copyright{
-    color: $brand-light-navs;
+    color: $brand-light-text;
     font-size: .5em;
   }
   .phone-number{
-    font-family: 'museo_sans100';
+    font-family: 'museo_sans100', sans-serif;
   }
 }
 #shadow {

@@ -75,6 +75,11 @@
 							<?php wp_nav_menu( array('theme_location' => 'shop', 'menu_class' => 'shop-menu') ); ?>
 							<hr class="push--right">
 							<?php wp_nav_menu( array('theme_location' => 'about', 'menu_class' => 'shop-sub-menu') ); ?>
+
+							<?php } elseif ( is_tree(45) ) { ?>
+							<?php wp_nav_menu( array('theme_location' => 'shop', 'menu_class' => 'shop-menu') ); ?>
+							<hr class="push--right">
+							<?php wp_nav_menu( array('theme_location' => 'about', 'menu_class' => 'shop-sub-menu') ); ?>
 						<?php } ?>
 
 					</nav>

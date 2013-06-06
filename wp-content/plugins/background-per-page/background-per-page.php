@@ -1,7 +1,8 @@
 <?php /*
-Plugin Name: Background Per Page
-Plugin URI: http://fishcantwhistle.com
-Author: Fish Can't Whistle
+Plugin Name: RH Custom Backgrounds
+Plugin URI: 
+Description: Set custom, full screen backgrounds on a per page/post basis.
+Author: Jay Clark
 Version: 0.3
 */
 
@@ -111,7 +112,7 @@ function add_background_per_page(){
 		
 		?><style type="text/css">
 		
-			<?php echo $element; ?>, <?php echo $element; ?>.custom-background  { 
+			<?php echo 'body'; ?>, <?php echo $element; ?>.custom-background  { 
 				<?php if($src != ''){ ?>
 					background: url('<?php echo $src; ?>') no-repeat center center fixed; 
 					-webkit-background-size: cover;
