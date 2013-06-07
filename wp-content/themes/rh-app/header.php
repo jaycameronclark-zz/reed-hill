@@ -52,7 +52,7 @@
 						<div class="grid--full">
 							<div class="grid__item one-quarter palm-one-half">
 								<div class="page-title flush--left">
-									<?php wp_nav_menu( array('theme_location' => 'primary') ); ?>
+									<?php wp_nav_menu( array('theme_location' => 'work_shop') ); ?>
 								</div>
 							</div><!--
 
@@ -63,8 +63,18 @@
 							</div>
 						</div>
 						<hr class="push--right">
-						<?php if (is_page('work') || '22' == $post->post_parent ) { ?>
-							<?php wp_nav_menu( array('theme_location' => 'work') ); ?>
+						<?php if (is_front_page() || is_page('work') || is_tree(22) ) { ?>
+							<?php wp_nav_menu( array('theme_location' => 'work', 'menu_class' => 'sub-menu') ); ?>
+
+						<?php } elseif ( (is_page('industry') || is_tree(22) ) ) { ?>
+							<?php wp_nav_menu( array('theme_location' => 'work', 'menu_class' => 'sub-menu') ); ?>
+							<hr class="push--right">
+							<?php wp_nav_menu( array('theme_location' => 'industry', 'menu_class' => 'sub-sub-menu') ); ?>
+
+						<?php } elseif ( (is_page('medium') || is_tree(6) ) ) { ?>
+							<?php wp_nav_menu( array('theme_location' => 'work', 'menu_class' => 'sub-menu') ); ?>
+							<hr class="push--right">
+							<?php wp_nav_menu( array('theme_location' => 'medium', 'menu_class' => 'sub-sub-menu') ); ?>
 
 						<?php } elseif (is_page('shop') ) { ?>
 							<?php wp_nav_menu( array('theme_location' => 'shop') ); ?>
@@ -72,14 +82,16 @@
 							<?php wp_nav_menu( array('theme_location' => 'about') ); ?>
 						
 						<?php } elseif ( is_tree(29) ) { ?>
-							<?php wp_nav_menu( array('theme_location' => 'shop', 'menu_class' => 'shop-menu') ); ?>
+							<?php wp_nav_menu( array('theme_location' => 'shop', 'menu_class' => 'sub-menu') ); ?>
 							<hr class="push--right">
-							<?php wp_nav_menu( array('theme_location' => 'about', 'menu_class' => 'shop-sub-menu') ); ?>
+							<?php wp_nav_menu( array('theme_location' => 'about', 'menu_class' => 'sub-sub-menu') ); ?>
 
-							<?php } elseif ( is_tree(45) ) { ?>
-							<?php wp_nav_menu( array('theme_location' => 'shop', 'menu_class' => 'shop-menu') ); ?>
+						<?php } elseif ( is_tree(45) ) { ?>
+							<?php wp_nav_menu( array('theme_location' => 'shop', 'menu_class' => 'sub-menu') ); ?>
 							<hr class="push--right">
-							<?php wp_nav_menu( array('theme_location' => 'about', 'menu_class' => 'shop-sub-menu') ); ?>
+							<?php wp_nav_menu( array('theme_location' => 'about', 'menu_class' => 'sub-sub-menu') ); ?>
+
+
 						<?php } ?>
 
 					</nav>

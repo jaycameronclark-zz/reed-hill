@@ -63,11 +63,14 @@ if ( function_exists( 'add_image_size' ) ) {
 function register_rh_app_menus() {
   register_nav_menus(
     array(
-    	'primary' => __( 'Primary' ),
+    	'work_shop' => __( 'Work/Shop' ),
       'work' => __( 'Work' ),
       'shop' => __( 'Shop' ),
       'locations' => __( 'Locations' ),
-      'about' => __( 'About' )
+      'about' => __( 'About' ),
+			'industry' => __( 'Industry' ),
+			'client' => __( 'Client' ),
+			'medium' => __( 'Medium' ),
     )
   );
 }

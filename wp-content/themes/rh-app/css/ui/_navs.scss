@@ -52,29 +52,38 @@ header.masthead{
 //MAIN NAV
 		ul{
 			list-style-type: none;
-			margin: 0 0 2px 0;
+			margin: 0 0 4px 0;
 		}
-		ul.shop-menu{
+		ul.sub-menu{
+			margin-left: 2px;
+			li{
+				margin-right: 2px;
+			}
 			li a{
-				font-size: 0.5em;
+				font-size: 0.6em;
 			}
 		}
-		ul.shop-sub-menu{
+		ul.sub-sub-menu{
 			padding-bottom: $base-line-height;
+			padding-right: $base-line-height;
 			li{
 				margin-right: 0px;
+				margin-left: 0px;
+			}
+			li a{
+				font-size: 0.7em;
 			}
 			li:after{
 				color: $brand-light-navs;
-				font-size: 0.6em;
+				font-size: 0.8em;
 				content: " \002F";
+				vertical-align: bottom;
 			}
 			li:last-child:after{
 				content: "";
 			}
 		}
 		li{
-			margin-right: 4px;
 			margin-bottom: 4px;
 			display: inline-block;
 			*display: inline;
