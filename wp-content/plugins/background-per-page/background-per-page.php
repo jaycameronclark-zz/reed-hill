@@ -23,7 +23,7 @@ $meta_boxes[] = array(
 
 	'title' => 'Background Image',
 
-	'pages' => array( 'post', 'page', 'bpp_settings'),
+	'pages' => array( 'post', 'page', 'bpp_settings', 'rh_client_work'),
 
 	'context' => 'normal',
 

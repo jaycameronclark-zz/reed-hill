@@ -52,8 +52,9 @@
 						<div class="grid--full">
 							<div class="grid__item one-quarter palm-one-half">
 								<div class="page-title flush--left">
-									<?php wp_nav_menu( array('theme_location' => 'work_shop') ); ?>
+									<?php wp_nav_menu( array('theme_location' => 'work_shop', 'menu_class' => '') ); ?>
 								</div>
+
 							</div><!--
 
 							--><div class="grid__item three-quarters palm-one-half">
@@ -61,39 +62,21 @@
 									<?php wp_nav_menu( array('theme_location' => 'locations') ); ?>
 								</div>
 							</div>
+							<hr class="push--right">
+							<?php if (is_front_page() || is_tree(22) ) { ?>
+								<?php wp_nav_menu( array('theme_location' => 'work', 'menu_class' => 'sub-menu') ); ?>
+							<?php } elseif ( (is_page('client') ) ) { ?>
+								<?php wp_nav_menu( array('theme_location' => 'work', 'menu_class' => 'sub-menu') ); ?>
+							<hr class="push--right">
+								<?php wp_nav_menu( array('theme_location' => 'industry', 'menu_class' => 'sub-sub-menu') ); ?>
+							<?php } ?>
+							<hr class="push--right">
+							<div class="breadcrumbs">
+								<ul>
+    						<?php if(function_exists('bcn_display')) { bcn_display(); }?>
+    						</ul>
+							</div>
 						</div>
-						<hr class="push--right">
-						<?php if (is_front_page() || is_page('work') || is_tree(22) ) { ?>
-							<?php wp_nav_menu( array('theme_location' => 'work', 'menu_class' => 'sub-menu') ); ?>
-
-						<?php } elseif ( (is_page('industry') || is_tree(22) ) ) { ?>
-							<?php wp_nav_menu( array('theme_location' => 'work', 'menu_class' => 'sub-menu') ); ?>
-							<hr class="push--right">
-							<?php wp_nav_menu( array('theme_location' => 'industry', 'menu_class' => 'sub-sub-menu') ); ?>
-
-						<?php } elseif ( (is_page('medium') || is_tree(6) ) ) { ?>
-							<?php wp_nav_menu( array('theme_location' => 'work', 'menu_class' => 'sub-menu') ); ?>
-							<hr class="push--right">
-							<?php wp_nav_menu( array('theme_location' => 'medium', 'menu_class' => 'sub-sub-menu') ); ?>
-
-						<?php } elseif (is_page('shop') ) { ?>
-							<?php wp_nav_menu( array('theme_location' => 'shop') ); ?>
-							<hr class="push--right">
-							<?php wp_nav_menu( array('theme_location' => 'about') ); ?>
-						
-						<?php } elseif ( is_tree(29) ) { ?>
-							<?php wp_nav_menu( array('theme_location' => 'shop', 'menu_class' => 'sub-menu') ); ?>
-							<hr class="push--right">
-							<?php wp_nav_menu( array('theme_location' => 'about', 'menu_class' => 'sub-sub-menu') ); ?>
-
-						<?php } elseif ( is_tree(45) ) { ?>
-							<?php wp_nav_menu( array('theme_location' => 'shop', 'menu_class' => 'sub-menu') ); ?>
-							<hr class="push--right">
-							<?php wp_nav_menu( array('theme_location' => 'about', 'menu_class' => 'sub-sub-menu') ); ?>
-
-
-						<?php } ?>
-
 					</nav>
 				</div>
 			</header>

@@ -137,5 +137,31 @@ header.masthead{
 			border: none;
 			border-bottom: dashed 1px $brand-hr-gray;
 		}
+		li a:hover{
+			color: lighten($brand-light-navs,10%);
+		}
+	}
+	.breadcrumbs{
+		font-size: 0.8em;
+		padding-top: 4px;
+		color: #E6E7E8;
+		ul{
+			font-family: 'museo_sans100', sans-serif;
+			padding-bottom: $base-line-height;
+			padding-right: $base-line-height;
+			a{
+				color: #E6E7E8;
+				text-decoration: none;
+				&:after{
+					content: " \203A";
+					vertical-align: bottom;
+					font-size: 1.4em;
+					color: $brand-light-navs;
+				}
+			&:hover{
+				color: darken($brand-light-navs, 10%);
+			}
+			}
+		}
 	}
 }

@@ -1,5 +1,6 @@
 <?php
 
+
 /*-------------------------------------------------------------------------------------------*/
 /* JQUERY */
 /*-------------------------------------------------------------------------------------------*/
@@ -9,6 +10,9 @@
 				wp_deregister_script( 'jquery' );
 				wp_register_script( 'jquery', ( "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ), false);
 				wp_enqueue_script( 'jquery' );
+
+				wp_enqueue_script( 'video-js', get_template_directory_uri() . '/_/js/video-js/video.js' );
+	wp_enqueue_style( 'video-js-css', get_template_directory_uri() . '/_/js/video-js/video-js.min.css' );
 			}
 		}
 		add_action( 'wp_enqueue_scripts', 'core_mods' );
@@ -47,6 +51,17 @@ if ( function_exists( 'add_image_size' ) ) {
     // add_image_size( 'press-thumb', 200, 104, false );
     // add_image_size( 'pricing-support', 100, 100, false );
 }
+
+function my_connection_types() {
+	p2p_register_connection_type( array(
+		'name' => 'posts_to_pages',
+		'from' => 'rh_client_work',
+		'to' => 'page'
+	) );
+}
+add_action( 'p2p_init', 'my_connection_types' );
+
+
 
 /*-------------------------------------------------------------------------------------------*/
 /* CLEAN HEAD */
@@ -95,53 +110,142 @@ add_action( 'init', 'register_rh_app_menus' );
 /*-------------------------------------------------------------------------------------------*/
 /* SUBPAGE */
 /*-------------------------------------------------------------------------------------------*/
-function is_tree($pid)
-{
-  global $post;
+function is_tree( $pid ) {      // $pid = The ID of the page we're looking for pages underneath
+    global $post;               // load details about this page
 
-  $ancestors = get_post_ancestors($post->$pid);
-  $root = count($ancestors) - 1;
-  $parent = $ancestors[$root];
+    if ( is_page($pid) )
+        return true;            // we're at the page or at a sub page
 
-  if(is_page() && (is_page($pid) || $post->post_parent == $pid || in_array($pid, $ancestors)))
-  {
-    return true;
-  }
-  else
-  {
-    return false;
-  }
-};
+    $anc = get_post_ancestors( $post->ID );
+    foreach ( $anc as $ancestor ) {
+        if( is_page() && $ancestor == $pid ) {
+            return true;
+        }
+    }
 
+    return false;  // we arn't at the page, and the page is not an ancestor
+}
 
-/*-------------------------------------------------------------------------------------------*/
-/* rh_pt_client Post Type */
-/*-------------------------------------------------------------------------------------------*/
-class rh_pt_client {
+// add_filter( 'wp_nav_menu_objects', 'add_menu_parent_class' );
+// function add_menu_parent_class( $items ) {
 	
-	function rh_pt_client() {
+// 	$parents = array();
+// 	foreach ( $items as $item ) {
+// 		if ( $item->menu_item_parent && $item->menu_item_parent > 0 ) {
+// 			$parents[] = $item->menu_item_parent;
+// 		}
+// 	}
+	
+// 	foreach ( $items as $item ) {
+// 		if ( in_array( $item->ID, $parents ) ) {
+// 			$item->classes[] = 'menu-parent-item'; 
+// 		}
+// 	}
+	
+// 	return $items;    
+// }
+
+// class rh_nav_menu extends Walker_Nav_Menu {
+  
+// // add classes to ul sub-menus
+// function start_lvl( &$output, $depth ) {
+//     // depth dependent classes
+//     $indent = ( $depth > 0  ? str_repeat( "\t", $depth ) : '' ); // code indent
+//     $display_depth = ( $depth + 1); // because it counts the first submenu as 0
+//     $classes = array(
+//         'sub-menu',
+//         ( $display_depth % 2  ? 'menu-odd' : 'menu-even' ),
+//         ( $display_depth >=2 ? 'sub-sub-menu' : '' ),
+//         'menu-depth-' . $display_depth
+//         );
+//     $class_names = implode( ' ', $classes );
+  
+//     // build html
+//     $output .= "\n" . $indent . '<ul class="' . $class_names . '">' . "\n";
+// }
+  
+// // add main/sub classes to li's and links
+//  function start_el( &$output, $item, $depth, $args ) {
+//     global $wp_query;
+//     $indent = ( $depth > 0 ? str_repeat( "\t", $depth ) : '' ); // code indent
+  
+//     // depth dependent classes
+//     $depth_classes = array(
+//         ( $depth == 0 ? 'main-menu-item' : 'sub-menu-item' ),
+//         ( $depth >=2 ? 'sub-sub-menu-item' : '' ),
+//         ( $depth % 2 ? 'menu-item-odd' : 'menu-item-even' ),
+//         'menu-item-depth-' . $depth
+//     );
+//     $depth_class_names = esc_attr( implode( ' ', $depth_classes ) );
+  
+//     // passed classes
+//     $classes = empty( $item->classes ) ? array() : (array) $item->classes;
+//     $class_names = esc_attr( implode( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) ) );
+  
+//     // build html
+//     $output .= $indent . '<li id="nav-menu-item-'. $item->ID . '" class="' . $depth_class_names . ' ' . $class_names . '">';
+  
+//     // link attributes
+//     $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+//     $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+//     $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+//     $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+//     $attributes .= ' class="menu-link ' . ( $depth > 0 ? 'sub-menu-link' : 'main-menu-link' ) . '"';
+  
+//     $item_output = sprintf( '%1$s<a%2$s>%3$s%4$s%5$s</a>%6$s',
+//         $args->before,
+//         $attributes,
+//         $args->link_before,
+//         apply_filters( 'the_title', $item->title, $item->ID ),
+//         $args->link_after,
+//         $args->after
+//     );
+  
+//     // build html
+//     $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+// }
+// }
+
+// Register Theme Features
+function custom_theme_features()  {
+
+	$formats = array( 'gallery', 'image', 'video', );
+	add_theme_support( 'post-formats', $formats );	
+
+}
+
+// Hook into the 'after_setup_theme' action
+add_action( 'after_setup_theme', 'custom_theme_features' );
+add_post_type_support( 'rh_client_work', 'post-formats' );
+
+/*-------------------------------------------------------------------------------------------*/
+/* rh_client_work Post Type */
+/*-------------------------------------------------------------------------------------------*/
+class rh_client_work {
+	
+	function rh_client_work() {
 		add_action('init',array($this,'create_post_type'));
 	}
 	
 	function create_post_type() {
 		$labels = array(
-		    'name' => 'Clients',
-		    'singular_name' => 'Client',
-		    'add_new' => 'Add New Client',
-		    'all_items' => 'All Clients',
-		    'add_new_item' => 'Add New Client',
-		    'edit_item' => 'Edit Client',
-		    'new_item' => 'New Client',
-		    'view_item' => 'View Client',
-		    'search_items' => 'Search Clients',
-		    'not_found' =>  'No Clients found',
-		    'not_found_in_trash' => 'No Clients found in trash',
-		    'parent_item_colon' => 'Parent Post:',
-		    'menu_name' => 'Clients'
+	    'name' => 'Client Work',
+	    'singular_name' => 'Client',
+	    'add_new' => 'New Client Work',
+	    'all_items' => 'All Client Work',
+	    'add_new_item' => 'New Client Work',
+	    'edit_item' => 'Edit Client Work',
+	    'new_item' => 'New Client Work',
+	    'view_item' => 'View Client Work',
+	    'search_items' => 'Search Client Work',
+	    'not_found' =>  'No Client Work found',
+	    'not_found_in_trash' => 'No Client Work found in trash',
+	    'parent_item_colon' => 'Parent Client:',
+	    'menu_name' => 'Client Work'
 		);
 		$args = array(
 			'labels' => $labels,
-			'description' => "Reed-Hill Clients",
+			'description' => "Client Work",
 			'public' => true,
 			'exclude_from_search' => false,
 			'publicly_queryable' => true,
@@ -153,39 +257,39 @@ class rh_pt_client {
 			'menu_icon' => get_bloginfo('template_directory') . '/_/images/rh-admin-icon.png',
 			'capability_type' => 'post',
 			'hierarchical' => true,
-			'supports' => array('title','editor','thumbnail','excerpt','custom-fields','revisions'),
+			'rewrite' => array('slug' => 'client-work'),
+			'supports' => array('page-attributes','title','editor','thumbnail','excerpt','custom-fields','revisions','author'),
 			'has_archive' => true,
-			'rewrite' => false,
 			'query_var' => true,
 			'can_export' => true
 		); 
-		register_post_type('rh_pt_client',$args);
+		register_post_type('rh_client_work',$args);
 	}
 }
 
-$rh_pt_client = new rh_pt_client();				
+$rh_client_work = new rh_client_work();				
 
-function rh_clients_taxonomy() {
+function rh_client_work_taxonomy() {
 	$labels = array(
-		'name'              => _x( 'Client Categories', '' ),
-		'singular_name'     => _x( 'Client Category', '' ),
-		'search_items'      => __( 'Search Client Categories' ),
-		'all_items'         => __( 'All Client Categories' ),
-		'parent_item'       => __( 'Parent Client Category' ),
-		'parent_item_colon' => __( 'Parent Client Category:' ),
-		'edit_item'         => __( 'Edit Client Category' ), 
-		'update_item'       => __( 'Update Client Category' ),
-		'add_new_item'      => __( 'Add New Client Category' ),
-		'new_item_name'     => __( 'New Client Category' ),
-		'menu_name'         => __( 'Client Categories' ),
+		'name'              => _x( 'Client Work Categories', '' ),
+		'singular_name'     => _x( 'Client Work Category', '' ),
+		'search_items'      => __( 'Search Client Work Categories' ),
+		'all_items'         => __( 'All Client Work Categories' ),
+		'parent_item'       => __( 'Parent Client Work Category' ),
+		'parent_item_colon' => __( 'Parent Client Work Category:' ),
+		'edit_item'         => __( 'Edit Client Work Category' ), 
+		'update_item'       => __( 'Update Client Work Category' ),
+		'add_new_item'      => __( 'Add New Client Work Category' ),
+		'new_item_name'     => __( 'New Client Work Category' ),
+		'menu_name'         => __( 'Client Work Categories' ),
 	);
 	$args = array(
 		'labels' => $labels,
 		'hierarchical' => true,
 	);
-	register_taxonomy( 'client_category', 'rh_pt_client', $args );
+	register_taxonomy( 'client_work_category', 'rh_client_work', $args );
 }
-add_action( 'init', 'rh_clients_taxonomy', 0 );	
+add_action( 'init', 'rh_client_work_taxonomy', 0 );	
 
 
 /*-------------------------------------------------------------------------------------------*/
@@ -199,19 +303,19 @@ class rh_pt_industry {
 	
 	function create_post_type() {
 		$labels = array(
-		    'name' => 'Industries',
-		    'singular_name' => 'Industry',
-		    'add_new' => 'Add New Industry',
-		    'all_items' => 'All Industries',
-		    'add_new_item' => 'Add New Industry',
-		    'edit_item' => 'Edit Industry',
-		    'new_item' => 'New Industry',
-		    'view_item' => 'View Industry',
-		    'search_items' => 'Search Industries',
-		    'not_found' =>  'No Industries found',
-		    'not_found_in_trash' => 'No Industries found in trash',
-		    'parent_item_colon' => 'Parent Post:',
-		    'menu_name' => 'Industries'
+	    'name' => 'Industries',
+	    'singular_name' => 'Industry',
+	    'add_new' => 'Add New Industry',
+	    'all_items' => 'All Industries',
+	    'add_new_item' => 'Add New Industry',
+	    'edit_item' => 'Edit Industry',
+	    'new_item' => 'New Industry',
+	    'view_item' => 'View Industry',
+	    'search_items' => 'Search Industries',
+	    'not_found' =>  'No Industries found',
+	    'not_found_in_trash' => 'No Industries found in trash',
+	    'parent_item_colon' => 'Parent Post:',
+	    'menu_name' => 'Industries'
 		);
 		$args = array(
 			'labels' => $labels,
@@ -274,19 +378,19 @@ class rh_pt_medium {
 	
 	function create_post_type() {
 		$labels = array(
-		    'name' => 'Mediums',
-		    'singular_name' => 'Medium',
-		    'add_new' => 'Add New Medium',
-		    'all_items' => 'All Mediums',
-		    'add_new_item' => 'Add New Medium',
-		    'edit_item' => 'Edit Medium',
-		    'new_item' => 'New Medium',
-		    'view_item' => 'View Medium',
-		    'search_items' => 'Search Mediums',
-		    'not_found' =>  'No Mediums found',
-		    'not_found_in_trash' => 'No Mediums found in trash',
-		    'parent_item_colon' => 'Parent Post:',
-		    'menu_name' => 'Mediums'
+	    'name' => 'Mediums',
+	    'singular_name' => 'Medium',
+	    'add_new' => 'Add New Medium',
+	    'all_items' => 'All Mediums',
+	    'add_new_item' => 'Add New Medium',
+	    'edit_item' => 'Edit Medium',
+	    'new_item' => 'New Medium',
+	    'view_item' => 'View Medium',
+	    'search_items' => 'Search Mediums',
+	    'not_found' =>  'No Mediums found',
+	    'not_found_in_trash' => 'No Mediums found in trash',
+	    'parent_item_colon' => 'Parent Post:',
+	    'menu_name' => 'Mediums'
 		);
 		$args = array(
 			'labels' => $labels,
@@ -335,6 +439,8 @@ function rh_mediums_taxonomy() {
 	register_taxonomy( 'medium_category', 'rh_pt_medium', $args );
 }
 add_action( 'init', 'rh_mediums_taxonomy', 0 );	
-				
+
+
+			
 
 ?>

@@ -1,6 +1,6 @@
 	<div class="grid--full">	
 		<div class="grid__item one--whole">
-			<footer id="footer" class="push--top">
+			<footer id="footer" class="push--top push--bottom">
 				<div class="grid__item one-quarter palm-one-whole float--right">
 					<div class="float--right push--top">
 						<p class="brand-red phone-number text--right">+1.720.318.2545</p>
