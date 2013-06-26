@@ -4,8 +4,20 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-decoration"
+			],
+			[
 				"font",
-				"font-family"
+				"font-size"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"thePost",
+				"the_post_thumbnail"
 			],
 			[
 				"ba",
@@ -62,10 +74,6 @@
 			[
 				"tex",
 				"text-align"
-			],
-			[
-				"text",
-				"text-transform"
 			],
 			[
 				"l",
@@ -496,21 +504,32 @@
 	},
 	"file_history":
 	[
-		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/page.php",
-		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/custom-home-page.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/ui/_navs.scss",
 		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/footer.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/ui/_page.scss",
+		"/Users/jaycameronclark/Desktop/rh-menus.html",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/header.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/single.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/page.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/custom-client-work.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/functions.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/archive-rh_client_work.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/single-rh_client_work.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/index.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/archive.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/archive-rh_client-work.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/archive-client-work.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/single-client-work.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/custom-home-page.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/client.php",
+		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/single-rh_client.php",
 		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/ui/_fonts.scss",
 		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/_vars.scss",
-		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/ui/_navs.scss",
-		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/header.php",
 		"/Users/jaycameronclark/Sites/RH/rh-app/wp-config.php",
-		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/ui/_page.scss",
-		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/functions.php",
 		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/inuit.css/generic/_helper.scss",
 		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/css/inuit.css/_defaults.scss",
 		"/Users/jaycameronclark/Sites/RH/rh-app/sql-migrate.txt",
 		"/Users/jaycameronclark/.ssh/id_rsa.pub",
-		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/index.php",
 		"/Users/jaycameronclark/Sites/RH/rh-app/wp-content/themes/rh-app/rh-app.sublime-project",
 		"/Users/jaycameronclark/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/jaycameronclark/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
@@ -612,18 +631,7 @@
 		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/js/trimbleConnected.js",
 		"/Users/jaycameronclark/Sites/Trimble/wp-content/uploads/edge_suite/project/trimble-anim-4_12/trimble-anim-4_edgeActions.js",
 		"/Users/jaycameronclark/Sites/Trimble/wp-content/uploads/edge_suite/project/trimble-anim-4_11/trimble-anim-4_edgeActions.js",
-		"/Users/jaycameronclark/Sites/Trimble/wp-config.php",
-		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected2/less/animation.less",
-		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected2/js/trimbleConnected.js",
-		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected2/functions.php",
-		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected2/custom-software-show-stopper.php",
-		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/style.css",
-		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/trimbleconnected/less/main.less",
-		"/Users/jaycameronclark/Sites/Trimble/wp-content/themes/twentytwelve/style.css",
-		"/Users/jaycameronclark/Desktop/animations/animation-4/trimble-anim-4_edgeActions.js",
-		"/Users/jaycameronclark/Sites/Trimble/wp-content/uploads/edge_suite/project/trimble-anim-4_10/trimble-anim-4_edgeActions.js",
-		"/Users/jaycameronclark/Sites/Trimble/wp-content/uploads/edge_suite/project/trimble-anim-4_9/trimble-anim-4_edgeActions.js",
-		"/Users/jaycameronclark/Sites/Trimble/wp-content/uploads/edge_suite/project/trimble-anim-4_8/trimble-anim-4_edgeActions.js"
+		"/Users/jaycameronclark/Sites/Trimble/wp-config.php"
 	],
 	"find":
 	{
@@ -660,6 +668,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"page",
+			"case_study_parent_id",
+			"page",
+			"client-thumb",
+			"mypages",
+			"Client",
+			"rh_client",
+			"RH ",
+			"Client",
+			"rh_work",
+			"Client",
+			"rh_client",
 			"url('museosans",
 			"http://www.newsiteurl.com",
 			"http://www.oldsiteurl.com",
@@ -775,19 +795,7 @@
 			"bootstrap",
 			"class=\"input-large",
 			"50",
-			"W",
-			"placeholder",
-			"<img class=\"logo\" src=\"images/logo-144x50.png\" title=\"flippit&trade;\" width=\"\" height=\"\" alt=\"flippit logo\">",
-			"10-25",
-			"Run ",
-			"Run W/in",
-			"2d",
-			"1e",
-			"search-results-single.html",
-			"Run ",
-			"black",
-			"              <select class=\"span3 mainsearch half\">\n                <option>Run W/in 10-25 mi.</option>\n                <option>Run W/in 50 mi.</option>\n                <option>Run W/in 75 mi.</option>\n                <option>Run W/in 100 mi.</option>\n                <option>Run W/in 200 mi.</option>\n                <option>Run W/in 300 mi.</option>\n                <option>Run W/in 500 mi.</option>\n                <option>Run W/in 1000 mi.</option>\n                <option>Run W/in Any</option>\n              </select>",
-			"<p>"
+			"W"
 		],
 		"highlight": false,
 		"in_selection": false,
