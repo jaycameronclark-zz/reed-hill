@@ -1,5 +1,6 @@
+<!-- ////////////SINGLE CPT ///// -->
 <?php get_header(); ?>
-<!-- ////////////SINGLE -->
+
 <div class="grid--full">
   <section class="main-container min-height" id="<?php the_ID();?>">
 <?php echo "<!--"; ?>
@@ -36,6 +37,7 @@
     <?php echo "-->"; ?><a href="<?php echo get_page_link( $page->ID ); ?>"><article class="grid__item one-quarter palm-one-half tile">
     <?php echo get_the_post_thumbnail($page->ID, 'client-thumb'); ?> 
     <div class="title one-whole"><?php echo $page->post_title; ?></div>
+    <?php the_content(); ?>
     </article></a><?php echo "<!--"; ?>
   <?php } ?>
 

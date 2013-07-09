@@ -65,10 +65,8 @@
 							<hr class="push--right">
 							<?php if (is_front_page() || is_tree(22) ) { ?>
 								<?php wp_nav_menu( array('theme_location' => 'work', 'menu_class' => 'sub-menu') ); ?>
-							<?php } elseif ( (is_page('client') ) ) { ?>
+							<?php } elseif ( (is_singular('rh_client_work') ) ) { ?>
 								<?php wp_nav_menu( array('theme_location' => 'work', 'menu_class' => 'sub-menu') ); ?>
-							<hr class="push--right">
-								<?php wp_nav_menu( array('theme_location' => 'industry', 'menu_class' => 'sub-sub-menu') ); ?>
 							<?php } ?>
 							<hr class="push--right">
 							<div class="breadcrumbs">

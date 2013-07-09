@@ -27,7 +27,7 @@ REQUIRED STYLES (be careful overriding)
 /* Playback technology elements expand to the width/height of the containing div.
     <video> or <object> */
 .video-js .vjs-tech {
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   left: 0;
   width: 100%;

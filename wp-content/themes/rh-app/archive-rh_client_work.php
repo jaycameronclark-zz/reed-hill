@@ -1,5 +1,6 @@
+<!-- ////// ARCHIVE ///// -->
 <?php get_header(); ?>
-<!-- ////////////Archive -->
+
 <div class="grid--full">
   <section class="main-container min-height" id="<?php the_ID();?>">
 <?php echo "<!--"; ?>

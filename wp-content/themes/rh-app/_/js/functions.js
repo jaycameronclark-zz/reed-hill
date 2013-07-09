@@ -12,16 +12,16 @@
 (function($){
 
 
-/* trigger when page is ready */
-$(document).ready(function (){
+// /* trigger when page is ready */
+// $(document).ready(function (){
 
-$("#shadow").css("height", $(document).height()).hide();
+// $("#shadow").css("height", $(document).height()).hide();
 
-	$(".tile").click(function(){
-		$("#shadow").toggle();
-		$(".tile").css("z-index", "2000");
-	});
-});
+// 	$(".tile").click(function(){
+// 		$("#shadow").toggle();
+// 		$(".tile").css("z-index", "2000");
+// 	});
+// });
 
 
 /* optional triggers

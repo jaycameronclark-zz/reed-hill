@@ -149,9 +149,11 @@ header.masthead{
 			font-family: 'museo_sans100', sans-serif;
 			padding-bottom: $base-line-height;
 			padding-right: $base-line-height;
+			font-style: italic;
 			a{
 				color: #E6E7E8;
 				text-decoration: none;
+				font-style: normal;
 				&:after{
 					content: " \203A";
 					vertical-align: bottom;

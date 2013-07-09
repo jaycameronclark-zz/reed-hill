@@ -14,21 +14,21 @@
  * @package WordPress
  */
 
-//Pagoda app
-define('DB_NAME', 'rh-app');
-define('DB_USER', 'shakita');
-define('DB_PASSWORD', 'gvpAfPFY');
-define('DB_HOST', 'tunnel.pagodabox.com:3306');
-define('DB_CHARSET', 'utf8');
-define('DB_COLLATE', '');
-
-// //Local Development
+// Pagoda app
 // define('DB_NAME', 'rh-app');
-// define('DB_USER', 'root');
-// define('DB_PASSWORD', 'root');
-// define('DB_HOST', 'localhost');
+// define('DB_USER', 'shakita');
+// define('DB_PASSWORD', 'gvpAfPFY');
+// define('DB_HOST', 'tunnel.pagodabox.com:3306');
 // define('DB_CHARSET', 'utf8');
 // define('DB_COLLATE', '');
+
+//Local Development
+define('DB_NAME', 'rh-app');
+define('DB_USER', 'root');
+define('DB_PASSWORD', 'root');
+define('DB_HOST', 'localhost');
+define('DB_CHARSET', 'utf8');
+define('DB_COLLATE', '');
 
 /**#@+
  * Authentication Unique Keys and Salts.

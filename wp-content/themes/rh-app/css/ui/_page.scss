@@ -12,9 +12,9 @@ body.stretched-background {
   padding: 0 22px;
 }
 
-section{
+section {
   color: $brand-light-text;
-	&.main-container{
+	&.main-container {
     margin-top: $base-line-height / 2;
     padding: $base-line-height - 2;
     height: auto;
@@ -63,6 +63,7 @@ section{
           }
         }
       }
+
       .offices{
         position: relative;
         z-index: 1;
@@ -158,10 +159,44 @@ section{
 
         }
       }
+
     &.min-height{
       min-height: $min-height;
     }
+
 	}
+}
+/*------------------------------------*\
+    media headlines
+\*------------------------------------*/
+.rh-media{
+
+  .headline{
+    height: 40px;
+    background: #ccc7c2;
+    background: -moz-linear-gradient(left, #ccc7c2 0%, #a7a3a0 14%, #e0e1e2 50%, #a7a3a0 87%, #ccc7c2 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ccc7c2), color-stop(14%,#a7a3a0), color-stop(50%,#e0e1e2), color-stop(87%,#a7a3a0), color-stop(100%,#ccc7c2));
+    background: -webkit-linear-gradient(left, #ccc7c2 0%,#a7a3a0 14%,#e0e1e2 50%,#a7a3a0 87%,#ccc7c2 100%);
+    background: -o-linear-gradient(left, #ccc7c2 0%,#a7a3a0 14%,#e0e1e2 50%,#a7a3a0 87%,#ccc7c2 100%);
+    background: -ms-linear-gradient(left, #ccc7c2 0%,#a7a3a0 14%,#e0e1e2 50%,#a7a3a0 87%,#ccc7c2 100%);
+    background: linear-gradient(to right, #ccc7c2 0%,#a7a3a0 14%,#e0e1e2 50%,#a7a3a0 87%,#ccc7c2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccc7c2', endColorstr='#ccc7c2',GradientType=1 );
+
+    p{
+      color: #414042;
+      line-height: 40px;
+      font-style: italic;
+      margin-left: 18%;
+      text-shadow: 1px 1px 1px #888888; 
+      &:before{
+        font-size: 20px;
+        font-style: normal;
+        color: $brand-red;
+        content: "\203A";
+      }
+    }
+    
+  }
 }
 
 footer{
