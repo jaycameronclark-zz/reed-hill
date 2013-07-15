@@ -8,7 +8,8 @@
 					</div>
 				</div>
 			</footer>
-		</div>
+		</div><!--
+	--><div class="grid__item"></div>
 	</div><!--end grid-->
 
 	<?php wp_footer(); ?>

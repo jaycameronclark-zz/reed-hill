@@ -63,16 +63,23 @@
 								</div>
 							</div>
 							<hr class="push--right">
-							<?php if (is_front_page() || is_tree(22) ) { ?>
+							<?php if (is_page('client') ) { ?>
 								<?php wp_nav_menu( array('theme_location' => 'work', 'menu_class' => 'sub-menu') ); ?>
-							<?php } elseif ( (is_singular('rh_client_work') ) ) { ?>
+
+							<?php } elseif ( is_tree(742) || is_tree(22) ) { ?>
 								<?php wp_nav_menu( array('theme_location' => 'work', 'menu_class' => 'sub-menu') ); ?>
-							<?php } ?>
+							
 							<hr class="push--right">
 							<div class="breadcrumbs">
 								<ul>
-    						<?php if(function_exists('bcn_display')) { bcn_display(); }?>
-    						</ul>
+    								<?php if(function_exists('bcn_display')) { bcn_display(); }?>
+    							</ul>
+    						
+    						<?php } elseif (is_tree(26) || is_tree(45) ) { ?>
+							<?php wp_nav_menu( array('theme_location' => 'shop') ); ?>
+							<hr class="push--right">
+							<?php wp_nav_menu( array('theme_location' => 'about', 'menu_class' => 'sub-sub-menu') ); ?>
+    						<?php } ?>
 							</div>
 						</div>
 					</nav>

@@ -141,16 +141,18 @@ header.masthead{
 			color: lighten($brand-light-navs,10%);
 		}
 	}
+//BREADCRUMBS
 	.breadcrumbs{
 		font-size: 0.8em;
 		padding-top: 4px;
 		color: #E6E7E8;
 		ul{
-			font-family: 'museo_sans100', sans-serif;
+			
 			padding-bottom: $base-line-height;
 			padding-right: $base-line-height;
 			font-style: italic;
 			a{
+				font-family: 'museo_sans100', sans-serif;
 				color: #E6E7E8;
 				text-decoration: none;
 				font-style: normal;
@@ -167,3 +169,47 @@ header.masthead{
 		}
 	}
 }
+//PAGER NAVIGATION
+.page-nav-left{
+	position: absolute;
+	z-index: 100;
+	top: 48%;
+	left: 0;
+	width: 28px; 
+	height: 53px; 
+	background-image: url(./_/images/page-nav-sprite.png);
+	background-position: 0 0;
+	&:hover{
+		cursor: pointer;
+		background-position: -29px 0;
+	}
+}
+.page-nav-right{
+	position: absolute;
+	z-index: 100;
+	top: 48%;
+	right: 0;
+	width: 28px; 
+	height: 53px; 
+	background-image: url(./_/images/page-nav-sprite.png);
+	background-position: 29px 0;
+	&:hover{
+		cursor: pointer;
+		background-position: 58px 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

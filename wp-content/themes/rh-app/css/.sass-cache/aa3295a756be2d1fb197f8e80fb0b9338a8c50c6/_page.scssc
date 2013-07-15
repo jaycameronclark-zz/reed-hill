@@ -1,5 +1,5 @@
 3.2.9 (Media Mark)
-d1b7301c8eca12f274d0c424ae3219602ad62e61
+1e4ae100e61517445299366f32cb550a90930115
 o:Sass::Tree::RootNode
 :@template" /*------------------------------------*\
     RH | page.scss
@@ -36,7 +36,7 @@ section {
           height: 45px;
           line-height: 45px;
           padding-left: 12px;
-          font-size: 0.7em;
+          font-size: 0.8em;
           color: #a7a9ab;
           border-right: 1px solid $brand-dark-gray;
           border-bottom: 1px solid $brand-dark-gray;
@@ -287,7 +287,7 @@ minus;,o;-;	i;
 @;i';;;["line-heighto;;i ;[ ;	o;;	"	12px;
 @;;;
 @;i(;;;["padding-lefto;;i ;[ ;	o;;	"
-0.7em;
+0.8em;
 @;;;
 @;i);;;["font-sizeo;;i ;[ ;	o;;	"#a7a9ab;
 @;;;
