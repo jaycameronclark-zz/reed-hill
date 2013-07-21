@@ -12,7 +12,7 @@
 				wp_enqueue_script( 'jquery' );
 
 				wp_enqueue_script( 'video-js', get_template_directory_uri() . '/_/js/video-js/video.js' );
-	wp_enqueue_style( 'video-js-css', get_template_directory_uri() . '/_/js/video-js/video-js.css' );
+        wp_enqueue_style( 'video-js-css', get_template_directory_uri() . '/_/js/video-js/video-js.css' );
 			}
 		}
 		add_action( 'wp_enqueue_scripts', 'core_mods' );
@@ -47,6 +47,14 @@ if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'client-thumb', 238, 194, false );
     // add_image_size( 'featured-image', 960, 428, false );
 }
+
+function remove_width_attribute( $html ) {
+   $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+   return $html;
+}
+
+add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
+add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
 
 /*-------------------------------------------------------------------------------------------*/
 /* CLEAN HEAD */
@@ -91,6 +99,53 @@ add_action( 'init', 'register_rh_app_menus' );
 	}
 	add_action( 'widgets_init', 'rh_app_widgets_init' );
 
+
+/*-------------------------------------------------------------------------------------------*/
+/* CUSTOM BREADCRUMBS */
+/*-------------------------------------------------------------------------------------------*/
+function the_breadcrumb() {
+   $current = $post->ID;
+   $parent = $post->post_parent;
+   $grandparent_get = get_post($parent);
+   $grandparent = $grandparent_get->post_parent;
+
+   echo '<ul class="">';
+   if (!is_home()) {
+      // echo '<ul class="sub-menu">';
+      // echo '<li><a href="'; echo get_option('home'); echo '">';
+      // echo "</a></li> ";
+      // echo '</ul>';
+      if (is_category() || is_single() || is_archive()) {
+         the_category('title_li=');
+         if (is_single()) {
+            
+            echo " <li>";
+            the_title();
+            echo "</li>";
+
+         }
+      } elseif (is_page()) {
+         if( count(get_post_ancestors($post->ID)) == 3 ){
+            echo "<li><a href='";
+            echo get_permalink($grandparent_get->post_parent);
+            echo "'>";
+            echo get_the_title($grandparent);
+            echo "</a>";
+            echo "</li>";
+         }
+         echo '<li class="current">';
+         echo the_title();
+         echo '</li>';
+      }
+   } else if ( is_home() ) {
+      echo '<li><a href="';
+      echo get_option('home');
+      echo '">';
+      echo 'Blog';
+      echo "</a></li>";
+   };
+   echo '</ul>';
+}
 
 /*-------------------------------------------------------------------------------------------*/
 /* SUBPAGE */

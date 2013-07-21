@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    RH | navs.scss
+    RH | NAVS.SCSS
 \*------------------------------------*/
 
 header.masthead{
@@ -19,14 +19,14 @@ header.masthead{
 			*display: inline;
 
 			a{
-				font-size: 20px;
+				font-size: 1.4em;
 				color: $brand-light-gray;
 				text-transform: lowercase;
 				text-decoration: none;
 			}
 			&.current_page_item:first-child a,
 			&.current-page-ancestor:first-child a{
-				font-size: 20px;
+				font-size: 1.5em;
 				color: $brand-off-white;
 				text-transform: uppercase;
 				text-decoration: none;
@@ -34,7 +34,7 @@ header.masthead{
 			}
 			&.current_page_item:last-child a,
 			&.current-page-ancestor:last-child a{
-				font-size: 20px;
+				font-size: 1.3em;
 				color: $brand-off-white;
 				text-transform: uppercase;
 				text-decoration: none;
@@ -58,6 +58,9 @@ header.masthead{
 			margin-left: 2px;
 			li{
 				margin-right: 2px;
+				&.current-page-ancestor a{
+					color: #fff;
+				}
 			}
 			li a{
 				font-size: 0.6em;
@@ -98,7 +101,7 @@ header.masthead{
 			&.current-page-ancestor{
 				a {
 					font-size: .6em;
-					color: #ffffff;
+					color: $brand-off-white;
 					text-transform: uppercase!important;
 				}
 			}
@@ -143,64 +146,50 @@ header.masthead{
 	}
 //BREADCRUMBS
 	.breadcrumbs{
-		font-size: 0.8em;
 		padding-top: 4px;
-		color: #E6E7E8;
 		ul{
-			
+			margin-left: 2px;
 			padding-bottom: $base-line-height;
 			padding-right: $base-line-height;
-			font-style: italic;
-			a{
+			li{
 				font-family: 'museo_sans100', sans-serif;
-				color: #E6E7E8;
-				text-decoration: none;
+				text-transform: uppercase;
+				color: $brand-off-white;
+				font-size: 0.8em;
 				font-style: normal;
-				&:after{
-					content: " \203A";
-					vertical-align: bottom;
-					font-size: 1.4em;
-					color: $brand-light-navs;
+
+				&:nth-child(2){
+					font-style: italic;
 				}
-			&:hover{
-				color: darken($brand-light-navs, 10%);
-			}
+
+				a{
+					color: $brand-off-white;
+					font-family: 'museo_sans100', sans-serif;
+					color: #E6E7E8;
+					text-decoration: none;
+					font-size: 1em;
+
+					text-transform: uppercase;
+					&:first-child{
+						&:after{
+							font-style: italic;
+							content: " \203A";
+							vertical-align: top;
+							font-size: 1.2em;
+							color: $brand-light-navs;
+							margin-left: 6px;
+							margin-right: 4px;
+						}
+					}
+
+					&:hover{
+						color: darken($brand-light-navs, 10%);
+					}
+				}
 			}
 		}
 	}
 }
-//PAGER NAVIGATION
-.page-nav-left{
-	position: absolute;
-	z-index: 100;
-	top: 48%;
-	left: 0;
-	width: 28px; 
-	height: 53px; 
-	background-image: url(./_/images/page-nav-sprite.png);
-	background-position: 0 0;
-	&:hover{
-		cursor: pointer;
-		background-position: -29px 0;
-	}
-}
-.page-nav-right{
-	position: absolute;
-	z-index: 100;
-	top: 48%;
-	right: 0;
-	width: 28px; 
-	height: 53px; 
-	background-image: url(./_/images/page-nav-sprite.png);
-	background-position: 29px 0;
-	&:hover{
-		cursor: pointer;
-		background-position: 58px 0;
-	}
-}
-
-
-
 
 
 

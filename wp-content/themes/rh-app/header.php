@@ -27,13 +27,6 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 	<?php wp_head(); ?>
-	
-	<script>
-		$(function(){
-			$("#nav").hide();
-			$("#nav").fadeIn("800");
-		});
-	</script>
 
 </head>
 
@@ -42,7 +35,7 @@
 		<div class="grid__item one-whole palm--one-whole">
 			<header class="masthead" id="header" role="header">
 				<div class="grid__item two-eighths">
-					<a class="push--two-twelfths push--palm-one-twelfth" href="<?php bloginfo('url'); ?>">
+					<a class="push--three-twelfths push--palm-one-twelfth" href="<?php bloginfo('url'); ?>">
 						<img class="logo" src="<?php bloginfo( 'template_directory' ); ?>/_/images/rh-logo-58x58.png">
 					</a>
 				</div><!--
@@ -71,10 +64,9 @@
 							
 							<hr class="push--right">
 							<div class="breadcrumbs">
-								<ul>
-    								<?php if(function_exists('bcn_display')) { bcn_display(); }?>
-    							</ul>
-    						
+    						<?php if(function_exists('the_breadcrumb')) { the_breadcrumb(); }?>
+    					</div>
+
     						<?php } elseif (is_tree(26) || is_tree(45) ) { ?>
 							<?php wp_nav_menu( array('theme_location' => 'shop') ); ?>
 							<hr class="push--right">

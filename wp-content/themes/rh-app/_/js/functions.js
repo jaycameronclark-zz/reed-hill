@@ -1,40 +1,46 @@
-// Browser detection for when you get desparate.
-// http://rog.ie/post/9089341529/html5boilerplatejs
-
-// var b = document.documentElement;
-// b.setAttribute('data-useragent',  navigator.userAgent);
-// b.setAttribute('data-platform', navigator.platform);
-
-// sample CSS: html[data-useragent*='Chrome/13.0'] { ... }
-
-
-// remap jQuery to $
-(function($){
-
-
-// /* trigger when page is ready */
-// $(document).ready(function (){
-
-// $("#shadow").css("height", $(document).height()).hide();
-
-// 	$(".tile").click(function(){
-// 		$("#shadow").toggle();
-// 		$(".tile").css("z-index", "2000");
-// 	});
-// });
-
-
-/* optional triggers
-
-$(window).load(function() {
-	
-});
-
-$(window).resize(function() {
-	
-});
-
+/*! Functions written for Reed-Hill by Jay Clark
+//@ Pivvt Media
 */
 
 
-})(window.jQuery);
+$(function(){
+
+function shadowBox(){
+
+	$overlay = $("#shadow");
+	$overlay.css("height", $(document).height()).hide();
+	$selector = $(".tile");
+
+		$selector.hover(function(){
+
+			$overlay.fadeIn(280);
+			$(this).css("z-index", "2000");
+
+		}, function(){
+				$overlay.toggle();
+				$(this).css("z-index", "0");
+
+		});
+		//kill overlay on click
+		$overlay.click(function() {
+			$(this).toggle();
+	});
+}
+
+function imageGallery(){
+
+	var width = 0;
+
+	$(".gallery-inner img").each(function() {
+		width += $(this).outerWidth( true );
+	});
+	$(".gallery-inner").css("width", width + "px");
+
+}
+
+//Init functions
+shadowBox();
+imageGallery();
+
+});
+

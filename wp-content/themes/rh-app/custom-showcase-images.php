@@ -11,7 +11,7 @@ Template Name: Showcase Images
     <?php echo "<!--"; ?>
 
       <?php echo "-->"; ?><article class="grid__item one-whole rh-media hard--left position-relative">
-      <div class="page-nav-left"></div>
+
       <div class="image-gallery">
         <div class="gallery-inner"> 
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -39,15 +39,14 @@ Template Name: Showcase Images
         </div> 
       </div>
 
-      <div class="page-nav-right"></div>
-
-      <div class="headline"><?php the_content(); ?></div>
+    <div class="headline"><?php the_content(); ?></div>
       
-      </article><?php echo "<!--"; ?>
+  </article><?php echo "<!--"; ?>
       
-    <?php endwhile; endif; ?>
+  <?php endwhile; endif; ?>
 
-    <?php echo "-->"; ?>
+  <?php echo "-->"; ?>
+  
   </section>
 </div>
 

@@ -21,8 +21,6 @@ Template Name: Showcase Video
         </div>
       </div>
       <div class="headline"><?php the_content(); ?></div>
-
-        <div class="pager-nav"></div>
  
       </article><?php echo "<!--"; ?>
       
