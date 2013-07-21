@@ -12,11 +12,26 @@
 	--><div class="grid__item"></div>
 	</div><!--end grid-->
 
+
+
+<!-- Contact Modal -->
+<div id="contact-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <span class="close" data-dismiss="modal" aria-hidden="true"></span>
+  </div>
+
+  <div class="modal-body">
+		<?php include (TEMPLATEPATH . '/_/inc/contact.php' ); ?>
+  </div>
+</div>
+
+
 	<?php wp_footer(); ?>
 
 <script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/_/js/modals.js"></script>
 
 <div id="shadow"></div>
+
 </body>
 </html>
