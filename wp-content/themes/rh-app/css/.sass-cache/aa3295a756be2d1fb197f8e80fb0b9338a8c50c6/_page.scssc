@@ -1,7 +1,7 @@
 3.2.9 (Media Mark)
-66d99c41554706c9c3ac98ed06f11648aef2f530
+77d815337aab784502ddc56bb5e0e49ff9dc54b7
 o:Sass::Tree::RootNode
-:@template"·/*------------------------------------*\
+:@template"ž/*------------------------------------*\
     RH | PAGE.SCSS
 \*------------------------------------*/
 body.stretched-background { 
@@ -193,7 +193,7 @@ section {
       line-height: 40px;
       font-style: italic;
       margin-left: 18%;
-      text-shadow: 1px 1px 1px #888888; 
+      text-shadow: 1px 1px 1px #F8F9F9;
       &:before{
         font-size: 20px;
         font-style: normal;
@@ -213,13 +213,13 @@ footer{
     font-size: .5em;
   }
   .phone-number{
-    font-family: 'museo_sans100', sans-serif;
+    font-family: 'museo_sans300', sans-serif;
   }
 }
 //Tile mouseover shadow
 #shadow {
   background-image: url(./_/images/shadow.png); 
-  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0.6;
   position: absolute; 
   left: 0; 
   top: 0; 
@@ -1088,7 +1088,7 @@ coloro;;i ;[ ;	o;;	"	40px;
 @;;;
 @;i¿;;;["font-styleo;;i ;[ ;	o;;	"18%;
 @;;;
-@;iÀ;;;["margin-lefto;;i ;[ ;	o;;	"1px 1px 1px #888888;
+@;iÀ;;;["margin-lefto;;i ;[ ;	o;;	"1px 1px 1px #F8F9F9;
 @;;;
 @;iÁ;;;["text-shadowo;;i ;[	o;;i ;[ ;	o;;	"	20px;
 @;;;
@@ -1126,7 +1126,7 @@ coloro;;i ;[ ;	o;;	"	.5em;
 @;;;
 @;iÒ;;;["font-size;
 @;[".footer-copyright;iÐ;o;;" ;iÐ;[o;;[o;
-; 0;@/;!o;";#{ ;iÐ;[o;&;@/;iÐ;["footer-copyright;'To;;i ;[o;;i ;[ ;	o;;	" 'museo_sans100', sans-serif;
+; 0;@/;!o;";#{ ;iÐ;[o;&;@/;iÐ;["footer-copyright;'To;;i ;[o;;i ;[ ;	o;;	" 'museo_sans300', sans-serif;
 @;;;
 @;iÕ;;;["font-family;
 @;[".phone-number;iÔ;o;;" ;iÔ;[o;;[o;
@@ -1136,13 +1136,9 @@ coloro;;i ;[ ;	o;;	"	.5em;
 ;[ ;	["/*Tile mouseover shadow */;
 @;iØ;;o;;i ;[o;;i ;[ ;	o;	;	"url(./_/images/shadow.png);
 @;iÚ;;;
-@;iÚ;;;["background-imageo;;i ;[ ;	o;2;
-@;3{ ;iÛ;4[	o;-;	i ;
-@;.@I;iÛ;/[ ;0"0o;-;	i ;
-@;.@I;iÛ;/[ ;0"0o;-;	i ;
-@;.@I;iÛ;/[ ;0"0o;-;	f0.20000000000000001 ™š;
-@;.@I;iÛ;/[ ;0"0.2;"	rgba;>0;
-@;iÛ;;;["background-coloro;;i ;[ ;	o;;	"absolute;
+@;iÚ;;;["background-imageo;;i ;[ ;	o;;	"0.6;
+@;;;
+@;iÛ;;;["opacityo;;i ;[ ;	o;;	"absolute;
 @;;;
 @;iÜ;;;["positiono;;i ;[ ;	o;;	"0;
 @;;;
@@ -1155,5 +1151,5 @@ widtho;;i ;[ ;	o;;	"100;
 @;;;
 @;ià;;;["z-index;
 @;["#shadow;iÙ;o;;" ;iÙ;[o;;[o;
-; 0;@ ;!o;";#{ ;iÙ;[o:Sass::Selector::Id;@ ;iÙ;["shadow;'T;
+; 0;@‘;!o;";#{ ;iÙ;[o:Sass::Selector::Id;@‘;iÙ;["shadow;'T;
 @;i;'T

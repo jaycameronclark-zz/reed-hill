@@ -45,7 +45,7 @@
 						<div class="grid--full">
 							<div class="grid__item one-quarter palm-one-half">
 								<div class="page-title flush--left">
-									<?php wp_nav_menu( array('theme_location' => 'work_shop', 'menu_class' => '') ); ?>
+									<?php wp_nav_menu( array('theme_location' => 'work_shop', 'menu_class' => 'page-title') ); ?>
 								</div>
 
 							</div><!--

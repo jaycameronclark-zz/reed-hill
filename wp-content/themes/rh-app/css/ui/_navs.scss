@@ -23,6 +23,9 @@ header.masthead{
 				color: $brand-light-gray;
 				text-transform: lowercase;
 				text-decoration: none;
+				&:hover{
+					color: $brand-off-white;
+				}
 			}
 			&.current_page_item:first-child a,
 			&.current-page-ancestor:first-child a{
@@ -64,6 +67,9 @@ header.masthead{
 			}
 			li a{
 				font-size: 0.6em;
+				&:hover{
+					color: $brand-off-white;
+				}
 			}
 		}
 		ul.sub-sub-menu{
@@ -110,7 +116,7 @@ header.masthead{
 		.locations{
 			ul{
 				list-style-type: none;
-				margin-left: 2px;
+				margin: 4px 2px 0 0;
 			}
 			li{
 				font-family: 'museo_sans100', sans-serif;
@@ -163,9 +169,8 @@ header.masthead{
 				}
 
 				a{
-					color: $brand-off-white;
 					font-family: 'museo_sans100', sans-serif;
-					color: #E6E7E8;
+					color: $brand-light-navs;
 					text-decoration: none;
 					font-size: 1em;
 
@@ -176,14 +181,14 @@ header.masthead{
 							content: " \203A";
 							vertical-align: top;
 							font-size: 1.2em;
-							color: $brand-light-navs;
+							color: $brand-off-white;
 							margin-left: 6px;
 							margin-right: 4px;
 						}
 					}
 
 					&:hover{
-						color: darken($brand-light-navs, 10%);
+						color: $brand-off-white;
 					}
 				}
 			}

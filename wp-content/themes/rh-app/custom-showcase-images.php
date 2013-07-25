@@ -23,6 +23,7 @@ Template Name: Showcase Images
                   'numberposts' => -1,
                   'post_status' => null,
                   'post_parent' => $post->ID,
+                  'order' => 'ASC',
                   'exclude' => get_post_thumbnail_id($post->ID)//Exclude featured image
                 ); 
               ?>

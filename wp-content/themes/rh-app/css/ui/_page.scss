@@ -190,7 +190,7 @@ section {
       line-height: 40px;
       font-style: italic;
       margin-left: 18%;
-      text-shadow: 1px 1px 1px #888888; 
+      text-shadow: 1px 1px 1px #F8F9F9;
       &:before{
         font-size: 20px;
         font-style: normal;
@@ -210,13 +210,13 @@ footer{
     font-size: .5em;
   }
   .phone-number{
-    font-family: 'museo_sans100', sans-serif;
+    font-family: 'museo_sans300', sans-serif;
   }
 }
 //Tile mouseover shadow
 #shadow {
   background-image: url(./_/images/shadow.png); 
-  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0.6;
   position: absolute; 
   left: 0; 
   top: 0; 
