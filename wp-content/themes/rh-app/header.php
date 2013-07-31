@@ -35,7 +35,7 @@
 		<div class="grid__item one-whole palm--one-whole">
 			<header class="masthead" id="header" role="header">
 				<div class="grid__item two-eighths">
-					<a class="push--three-twelfths push--palm-one-twelfth" href="<?php bloginfo('url'); ?>">
+					<a class="push--two-twelfths push--palm-one-twelfth" href="<?php bloginfo('url'); ?>">
 						<img class="logo" src="<?php bloginfo( 'template_directory' ); ?>/_/images/rh-logo-58x58.png">
 					</a>
 				</div><!--

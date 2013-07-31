@@ -24,7 +24,33 @@
 /*-------------------------------------------------------------------------------------------*/
   add_theme_support('automatic-feed-links');
 
+function is_subpage()
 
+{
+
+  global $post, $wpdb;
+
+
+
+  if ( is_page() AND isset( $post->post_parent ) != 0 )
+
+  {
+
+    $aParent = $wpdb->get_row( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE ID = %d AND post_type = 'page' LIMIT 1", $post->post_parent ) );
+
+    if ( $aParent->ID ) return true; else return false;
+
+  }
+
+  else
+
+  {
+
+    return false;
+
+  }
+
+}
 /*-------------------------------------------------------------------------------------------*/
 /* LOGIN LOGO */
 /*-------------------------------------------------------------------------------------------*/

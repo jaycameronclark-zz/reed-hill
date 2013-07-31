@@ -184,12 +184,16 @@ section {
     background: -ms-linear-gradient(left, #ccc7c2 0%,#a7a3a0 14%,#e0e1e2 50%,#a7a3a0 87%,#ccc7c2 100%);
     background: linear-gradient(to right, #ccc7c2 0%,#a7a3a0 14%,#e0e1e2 50%,#a7a3a0 87%,#ccc7c2 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccc7c2', endColorstr='#ccc7c2',GradientType=1 );
+    -webkit-box-shadow:  0px -4px 6px 0px rgba(0, 0, 0, 0.1);
+    box-shadow:  0px -4px 6px 0px rgba(0, 0, 0, 0.1);
 
     p{
+      font-size: 14px;
+      margin-left: 0;
+      display: inline-block;
       color: #414042;
       line-height: 40px;
       font-style: italic;
-      margin-left: 18%;
       text-shadow: 1px 1px 1px #F8F9F9;
       &:before{
         font-size: 20px;
@@ -198,7 +202,30 @@ section {
         content: "\203A";
       }
     }
-    
+  }
+  .website-url{
+    line-height: 40px;
+    display: inline-block;
+    a{
+      text-shadow: 1px 1px 1px #888888;
+      font-size: 11px;
+      font-style: italic;
+      text-decoration: none;
+      color: #4d4e51;
+      display: inline-block;
+      &:hover{
+        color: $brand-red;
+      }
+      > span.url-arrow{
+          background-image: url(./_/images/url-arrow.png);
+          background-position: 0 -2px;
+          width: 21px;
+          height: 21px;
+          margin: 0;
+          vertical-align: middle;
+          display: inline-block;
+      }
+    }
   }
 }
 

@@ -11,7 +11,7 @@ function shadowBox(){
 
 		$selector.hover(function(){
 
-			$overlay.fadeIn(280);
+			$overlay.fadeIn(800);
 			$(this).css("z-index", "2000");
 
 		}, function(){
