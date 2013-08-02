@@ -1,4 +1,0 @@
-web1-stacia: 
-  name: wp
-  shared_writable_dirs:
-    - wp-content/uploads
