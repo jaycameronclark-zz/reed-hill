@@ -1,4 +1,4 @@
-<!-- ////////// Showcase Images /// -->
+<!-- ////////// Showcase Video /// -->
 <?php
 /*
 Template Name: Showcase Video

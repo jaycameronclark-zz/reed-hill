@@ -1,3 +1,4 @@
+<!-- ////////// People /// -->
 <?php
 /*
 Template Name: People
@@ -5,51 +6,82 @@ Template Name: People
 ?>
 <?php get_header(); ?>
 
+<script>
+  $(function(){
+
+    $(".contact-modal").click(function(){
+      $("#contact-modal").modal("show");
+    });
+
+  });
+</script>
+
 <div class="grid--full">
-  <section class="main-container min-height" id="<?php the_ID();?>">
-<?php echo "<!--"; ?>
+    <section class="main-container" id="post-<?php the_ID(); ?>">
+      <figure class="grid__item one-whole palm-one-whole offices rh-media">
+        <div class="map-grid">
+          <div class="grid__item one-whole palm-one-whole">
+          <article class="content soft">
+            <?php 
+            $pagelist = get_pages('sort_column=post_title&sort_order=asc');
+            $pages = array();
+            foreach ($pagelist as $page) {
+               $pages[] += $page->ID;
+            }
 
+            $current = array_search(get_the_ID(), $pages);
+            $prevID = $pages[$current-1];
+            $nextID = $pages[$current+1];
+            ?>
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+              <div class="people-title">
+                <h3><span class="bio-arrow"></span><?php the_title(); ?></h3>
+              </div>
+              <div class="people-bio">
+                <?php the_content(); ?>
+              </div>
 
-<?php $args = array(
-  'sort_order' => 'ASC',
-  'sort_column' => 'post_title',
-  'hierarchical' => 0,
-  'exclude' => '',
-  'include' => '',
-  'meta_key' => '',
-  'meta_value' => '',
-  'authors' => '',
-  'child_of' => 0,
-  'parent' => $post->ID,
-  'exclude_tree' => '',
-  'number' => '',
-  'offset' => 0,
-  'post_type' => 'page',
-  'post_status' => 'publish'
-); 
+            <?php endwhile; ?>
+            <?php endif; ?>
+          </article>
+          </div>
+          <?php echo get_the_post_thumbnail($page->ID, 'inner-background'); ?>
+        </div>
 
-  $subpages = get_pages($args);
-
-  foreach( $subpages as $page ) {    
-    $content = $page->post_content;
-
-    $content = apply_filters( 'the_content', $content );
-
-  ?>
-    <?php echo "-->"; ?><a href="<?php echo get_page_link( $page->ID ); ?>"><article class="grid__item one-quarter palm-one-half tile">
-    <?php echo get_the_post_thumbnail($page->ID, 'client-thumb'); ?> 
-    <div class="title one-whole"><?php echo $page->post_title; ?></div>
-    </article></a><?php echo "<!--"; ?>
-  <?php } ?>
-
-<?php endwhile; ?>
-<?php endif; ?>
-<?php echo "-->"; ?>
-  </section>
+      <div class="headline">
+        <div class="grid__item two-eighths">
+        <nav class="pager push--one-tenth">
+          <?php if (!empty($prevID)) { ?>
+            <div class="page-left"><a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>">Back<span class="arrow-left"></span></a></div>
+          <?php } ?>
+          <?php if (!empty($nextID)) { ?>
+            <div class="page-right">
+              <a href="<?php echo get_permalink($nextID); ?>" title="<?php echo get_the_title($nextID); ?>"><span class="arrow-right"></span>Next</a></div>
+          <?php } ?>
+        </nav>
+        </div><!--
+        --><div class="grid__item six-eighths">
+          <?php the_excerpt(); ?>
+        </div>
+      </div>
+      </figure>
+    </section>
 </div>
+ 
+<!-- Modal -->
+<div id="contact-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <span class="close" data-dismiss="modal" aria-hidden="true"></span>
+    <h3 id="myModalLabel"></h3>
+  </div>
+  <div class="modal-body">
+    <p>Form goes here..</p>
+  </div>
+  <div class="modal-footer">
 
+  </div>
+</div>
 
 
 <?php get_footer(); ?>

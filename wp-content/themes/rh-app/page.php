@@ -1,8 +1,4 @@
-<?php
-/*
-Template Name: Offices >> Denver
-*/
-?>
+<!-- ////////// page.php /// -->
 <?php get_header(); ?>
 
 <script>
@@ -27,7 +23,7 @@ Template Name: Offices >> Denver
             <?php endif; ?>
           </article>
           </div>
-          <img src="<?php bloginfo( 'template_directory' ); ?>/_/images/denver-inner-bg.jpg" alt="">
+          <?php echo get_the_post_thumbnail($page->ID, 'inner-background'); ?>
         </div>
       </figure>
     </section>

@@ -64,14 +64,21 @@
 							
 							<hr class="push--right">
 							<div class="breadcrumbs">
-    						<?php if(function_exists('the_breadcrumb')) { the_breadcrumb(); }?>
+    						<?php if(function_exists('the_breadcrumb')) { the_breadcrumb(); } ?>
     					</div>
 
-    						<?php } elseif (is_tree(26) || is_tree(45) ) { ?>
+    					<?php } elseif (is_tree(26) || is_tree(45) ) { ?>
 							<?php wp_nav_menu( array('theme_location' => 'shop') ); ?>
 							<hr class="push--right">
 							<?php wp_nav_menu( array('theme_location' => 'about', 'menu_class' => 'sub-sub-menu') ); ?>
-    						<?php } ?>
+
+							<?php } elseif (is_tree(39) && is_tree(26) ) { ?>
+							<?php wp_nav_menu( array('theme_location' => 'shop') ); ?>
+							<hr class="push--right">
+							<?php wp_nav_menu( array('theme_location' => 'about', 'menu_class' => 'sub-sub-menu') ); ?>
+							<hr class="push--right">
+							<?php if(function_exists('the_breadcrumb')) { the_breadcrumb(); }?>
+    					<?php } ?>
 							</div>
 						</div>
 					</nav>

@@ -24,33 +24,7 @@
 /*-------------------------------------------------------------------------------------------*/
   add_theme_support('automatic-feed-links');
 
-function is_subpage()
 
-{
-
-  global $post, $wpdb;
-
-
-
-  if ( is_page() AND isset( $post->post_parent ) != 0 )
-
-  {
-
-    $aParent = $wpdb->get_row( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE ID = %d AND post_type = 'page' LIMIT 1", $post->post_parent ) );
-
-    if ( $aParent->ID ) return true; else return false;
-
-  }
-
-  else
-
-  {
-
-    return false;
-
-  }
-
-}
 /*-------------------------------------------------------------------------------------------*/
 /* LOGIN LOGO */
 /*-------------------------------------------------------------------------------------------*/
@@ -63,6 +37,15 @@ add_action('login_head', 'custom_login_logo');
 
 
 /*-------------------------------------------------------------------------------------------*/
+/* PAGE EXCERPTS */
+/*-------------------------------------------------------------------------------------------*/
+add_action('init', 'page_excerpts');
+function page_excerpts() {
+  add_post_type_support( 'page', 'excerpt' );
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
 /* IMAGES */
 /*-------------------------------------------------------------------------------------------*/
 if ( function_exists( 'add_theme_support' ) ) {
@@ -72,6 +55,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 if ( function_exists( 'add_image_size' ) ) { 
     add_image_size( 'client-thumb', 238, 194, false );
     // add_image_size( 'featured-image', 960, 428, false );
+    add_image_size( 'inner-background', 955, 611, false );
 }
 
 function remove_width_attribute( $html ) {

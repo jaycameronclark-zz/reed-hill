@@ -1,3 +1,4 @@
+<!-- ////////// Home Page /// -->
 <?php
 /*
 Template Name: Home

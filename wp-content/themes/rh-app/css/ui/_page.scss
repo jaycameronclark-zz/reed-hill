@@ -180,6 +180,34 @@ section {
                 line-height: $base-line-height + 4;
               }
             }
+          .people-title h3{
+              font-size: 18px;
+              font-weight: normal;
+              font-family: museo_sans100;
+              line-height: 25px;
+
+            .bio-arrow{
+              color: $brand-red;
+              font-family: museo_sans300;
+              font-size: 22px;
+              margin-left: -14px;
+              position: relative;
+              margin-right: 6px;
+
+              &:before{
+                content: "\203A";
+              }
+            }
+              
+          }
+          .people-bio p{
+            padding-right: 20px;
+                font-size: 12px;
+                font-weight: normal;
+                font-family: museo_sans100;
+                list-style-type: none;
+                line-height: $base-line-height + 4;
+              }
           }
 
         }
