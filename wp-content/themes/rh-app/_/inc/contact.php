@@ -1,18 +1,22 @@
 <div class="grid">
 	<div class="grid__item">
-		<p>
-			Short headline about contacting Reed Hill in a friendly, approachable way. Short headline about contacting Reed Hill in a friendly, approachable way.
-			Short headline about contacting Reed Hill in a friendly, approachable way.
-		</p>
+		<div class="contact">
+			<p>
+				Short headline about contacting Reed Hill in a friendly, approachable way. 
+				Short headline about contacting Reed Hill in a friendly, approachable way.
+				Short headline about contacting Reed Hill in a friendly, approachable way.
+			</p>
+		</div>
 	</div>
 </div>
 
-  <div id="messages" class="push--bottom"></div>
-  	<div class="grid--full">
+ 
+  	<div class="grid grid--full">
   		<div class="grid__item one-whole">
-		  	<form id="contactForm" action="" method="">
-					<ul class="form-fields">
-						<li>
+		  	<form class="contact-form" id="contactForm" action="" method="">
+					<ul class="form-fields soft--left">
+						<div id="messages" class="messages push--bottom"></div>
+						<li class="flush--left">
 							<input id="formName" type="text" class="text-input" placeholder="Name">
 							<input id="formEmail" type="email" class="text-input" placeholder="Email">
 						</li>

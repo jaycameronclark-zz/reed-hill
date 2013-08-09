@@ -22,6 +22,7 @@ section {
       .tile{
         position: relative;
         z-index: 1;
+        min-height: 200px;
         line-height: 0;
         padding: 0 0 0 0;
         margin: 0 0 0 0;
@@ -293,7 +294,7 @@ footer{
 //Tile mouseover shadow
 #shadow {
   background-image: url(./_/images/shadow.png); 
-  opacity: 0.6;
+  opacity: 0.8;
   position: absolute; 
   left: 0; 
   top: 0; 

@@ -22,6 +22,7 @@ Template Name: People
         <div class="map-grid">
           <div class="grid__item one-whole palm-one-whole">
           <article class="content soft">
+
             <?php 
             $pagelist = get_pages('sort_column=post_title&sort_order=asc');
             $pages = array();
@@ -69,19 +70,6 @@ Template Name: People
     </section>
 </div>
  
-<!-- Modal -->
-<div id="contact-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <span class="close" data-dismiss="modal" aria-hidden="true"></span>
-    <h3 id="myModalLabel"></h3>
-  </div>
-  <div class="modal-body">
-    <p>Form goes here..</p>
-  </div>
-  <div class="modal-footer">
-
-  </div>
-</div>
 
 
 <?php get_footer(); ?>

@@ -1,5 +1,5 @@
 /*! Functions written for Reed-Hill by Jay Clark
-//@ Pivvt Media
+//@ Pivvt.com
 */
 
 
