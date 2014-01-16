@@ -26,6 +26,8 @@ Template Name: Showcase Images
             $nextID = $pages[$current+1];
 
             $website_url = get_post_meta($post->ID, 'website_url', true);
+            $background = get_post_meta( $post->ID, '_bpp_background', true );
+            $featured = get_post_thumbnail_id($post->ID);
           
             if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 
@@ -35,7 +37,7 @@ Template Name: Showcase Images
                   'post_status' => null,
                   'post_parent' => $post->ID,
                   'order' => 'ASC',
-                  'exclude' => get_post_thumbnail_id($post->ID)//Exclude featured image
+                  'exclude' => array($background, $featured)//Exclude featured and background
                 ); 
 
             $attachments = get_posts( $args );
@@ -45,11 +47,12 @@ Template Name: Showcase Images
                 }
               } 
           ?>
+
         </div> 
       </div>
 
       <div class="headline">
-        <div class="grid__item two-eighths">
+        <div class="grid__item two-eighths palm-one-whole">
         <nav class="pager push--one-tenth">
           <?php if (!empty($prevID)) { ?>
             <div class="page-left"><a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>">Back<span class="arrow-left"></span></a></div>

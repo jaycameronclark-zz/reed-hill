@@ -23,12 +23,52 @@ Template Name: Showcase Video
         $prevID = $pages[$current-1];
         $nextID = $pages[$current+1];
 
-        if (have_posts()) : while (have_posts()) : the_post(); ?>
+        if (have_posts()) : while (have_posts()) : the_post(); 
+
+          $args = array(
+              'post_type' => 'attachment',
+              'numberposts' => -1,
+              'post_mime_type' => 'video',
+              'post_status' => null,
+              'post_parent' => $post->ID,
+              'order' => 'ASC',
+            ); 
+
+
+          $attachments = get_posts( $args ); 
+          $filetype = "";
+
+          ?>
+
 
       <div class="showcase-video">
         <div class="video-inner"> 
           <video width="" height="" class="video-js vjs-default-skin" autoplay data-setup="{}">
-            <source src="<?php echo wp_get_attachment_url( '860' ) ?>" type='video/mp4' />
+            <?php if ( $attachments ) { ?>
+              <?php foreach ( $attachments as $attachment ) { ?>
+
+              <?php 
+
+                $attachment_mime = wp_check_filetype(wp_get_attachment_url($attachment->ID) );
+
+                if ( $attachment_mime['type'] == 'video/mp4') { 
+                    $filetype = 'video/mp4';
+                }
+                elseif( $attachment_mime['type'] == 'video/webm') {
+                    $filetype = 'video/webm';
+                }
+                elseif( $attachment_mime['type'] == 'video/ogg'){
+                  $filetype = 'video/ogg';
+                }
+                else{
+                  $filetype = "";
+                }
+              ?>
+
+              <source src="<?php echo wp_get_attachment_url( $attachment->ID ); ?>" type='<?php echo $filetype; ?>' />
+
+             <?php } ?>
+            <?php } ?>
           </video>
         </div>
       </div>

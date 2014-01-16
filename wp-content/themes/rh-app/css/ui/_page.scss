@@ -2,11 +2,6 @@
     RH | PAGE.SCSS
 \*------------------------------------*/
 body.stretched-background { 
-  // background: url(_/images/temp-bg.jpg) no-repeat center center fixed; 
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
   max-width: $wrapper-width;
   margin: 0 auto;
   padding: 0 22px;
@@ -26,6 +21,9 @@ section {
         line-height: 0;
         padding: 0 0 0 0;
         margin: 0 0 0 0;
+          @include media-query(palm){ 
+            min-height: 100px;
+          }
         //highlight title bg on hover of tile
         &:hover{
           &:first-child .title{
@@ -48,7 +46,8 @@ section {
           bottom: 0;
           left: 0;
           height: 45px;
-          line-height: 45px;
+          vertical-align: middle;
+          display: table;
           padding-left: 12px;
           font-size: 12px;
           color: #a7a9ab;
@@ -65,6 +64,17 @@ section {
           background: -ms-linear-gradient(left,  rgba(131,127,125,1) 0%,rgba(81,77,79,1) 23%,rgba(131,127,125,1) 48%,rgba(81,77,79,1) 76%,rgba(131,127,125,1) 100%); /* IE10+ */
           background: linear-gradient(to right,  rgba(131,127,125,1) 0%,rgba(81,77,79,1) 23%,rgba(131,127,125,1) 48%,rgba(81,77,79,1) 76%,rgba(131,127,125,1) 100%); /* W3C */
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#837f7d', endColorstr='#837f7d',GradientType=1 ); /* IE6-9 */
+          
+          span{
+            display: table-cell;
+            vertical-align: middle;
+          }
+
+          @include media-query(palm){ 
+            font-size: 9px;
+            border-right: none;
+            padding-left: 6px;;
+          }
         }
       }
 
@@ -216,6 +226,9 @@ section {
 
     &.min-height{
       min-height: $min-height;
+        @include media-query(palm){ 
+          min-height: 0;
+        }
     }
 
 	}
@@ -281,6 +294,7 @@ section {
 }
 
 footer{
+
   font-size: 1em;
   font-weight: lighter;
   .footer-copyright{
@@ -289,6 +303,15 @@ footer{
   }
   .phone-number{
     font-family: 'museo_sans300', sans-serif;
+    color: $brand-red;
+    text-decoration: none;
+    @include media-query(palm){ 
+      font-size: 14px;
+    }
+  }
+  a[href^=tel]{
+    color:$brand-red;
+    text-decoration:none;
   }
 }
 //Tile mouseover shadow

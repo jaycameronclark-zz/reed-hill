@@ -1,7 +1,7 @@
-<!-- ////////// Client Work /// -->
+<!-- ////////// Client Landing /// -->
 <?php
 /*
-Template Name: Client Work
+Template Name: Client Landing
 */
 ?>
 <?php get_header(); ?>
@@ -41,7 +41,7 @@ Template Name: Client Work
   ?>
     <?php echo "-->"; ?><a href="<?php echo get_page_link( $page->ID ); ?>"><article class="grid__item one-quarter palm-one-half tile">
     <?php echo get_the_post_thumbnail($page->ID, 'client-thumb'); ?> 
-    <div class="title one-whole"><?php echo $page->post_title; ?></div>
+    <div class="title one-whole"><span><?php echo $page->post_title; ?></span></div>
     </article></a><?php echo "<!--"; ?>
   <?php } ?>
 
