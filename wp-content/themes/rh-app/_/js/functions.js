@@ -5,24 +5,29 @@
 
 function shadowBox(){
 
-	$overlay = $("#shadow");
-	$overlay.css("height", $(document).height()).hide();
-	$selector = $(".tile");
+	var $overlay = $("#shadow"),
+			$selector = $("article.tile");
 
-		$selector.hover(function(){
+			$overlay.css("height", $(document).height());
+			$overlay.hide();
 
-			$overlay.fadeIn(800);
-			$(this).css("z-index", "2000");
+			var showOverlay = function(){
+				$overlay.fadeIn(400);
+				$(this).css("z-index", "2000");
+			};
 
-		}, function(){
+			var hideOverlay = function(){
 				$overlay.toggle();
 				$(this).css("z-index", "0");
+			};
 
-		});
-		//kill overlay on click
-		$overlay.click(function() {
-			$(this).toggle();
-	});
+			//use hoverintent plugin
+			$selector.hoverIntent({
+				over: showOverlay,
+				out: hideOverlay,
+				selector: $("article.tile")
+			});
+
 }
 
 function imageGallery(){

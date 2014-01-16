@@ -116,23 +116,15 @@ add_action( 'init', 'register_rh_app_menus' );
 function the_breadcrumb() {
    $current = $post->ID;
    $parent = $post->post_parent;
-   $grandparent_get = get_post($parent);
-   $grandparent = $grandparent_get->post_parent;
-
+   
    echo '<ul class="">';
    if (!is_home()) {
-      // echo '<ul class="sub-menu">';
-      // echo '<li><a href="'; echo get_option('home'); echo '">';
-      // echo "</a></li> ";
-      // echo '</ul>';
       if (is_category() || is_single() || is_archive()) {
          the_category('title_li=');
          if (is_single()) {
-            
             echo " <li>";
             the_title();
             echo "</li>";
-
          }
       } elseif (is_page()) {
          if( count(get_post_ancestors($post->ID)) == 3 ){
@@ -154,6 +146,20 @@ function the_breadcrumb() {
       echo 'Blog';
       echo "</a></li>";
    };
+   echo '</ul>';
+}
+function the_other_breadcrumb() {
+   $current = $post->ID;
+   $parent = $post->post_parent;
+
+   echo '<ul>';
+   if (!is_home()) {
+    if (is_page()) {
+       echo '<li class="current">';
+       echo the_title();
+       echo '</li>';
+    }
+   } 
    echo '</ul>';
 }
 

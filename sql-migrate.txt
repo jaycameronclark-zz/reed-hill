@@ -1,5 +1,4 @@
-UPDATE wp_options SET option_value = replace(option_value, 'http://localhost:8888/RH/rh-app', 'http://reed-hill-app.gopagodabox.com') WHERE option_name = 'home' OR option_name = 'siteurl';
-UPDATE wp_posts SET guid = REPLACE (guid, 'http://localhost:8888/RH/rh-app', 'http://reed-hill-app.gopagodabox.com');
-UPDATE wp_posts SET post_content = REPLACE (post_content, 'http://localhost:8888/RH/rh-app', 'http://reed-hill-app.gopagodabox.com');
-UPDATE wp_posts SET post_content = REPLACE (post_content, 'http://localhost:8888/RH/rh-app', 'http://reed-hill-app.gopagodabox.com');
-UPDATE wp_postmeta SET meta_value = REPLACE (meta_value, 'http://localhost:8888/RH/rh-app','http://reed-hill-app.gopagodabox.com');
+UPDATE wp_options SET option_value = replace(option_value, 'http://reed-hill.com', 'http://localhost:8888/RH/rh-app') WHERE option_name = 'home' OR option_name = 'siteurl';
+UPDATE wp_posts SET guid = REPLACE (guid, 'http://reed-hill.com', 'http://localhost:8888/RH/rh-app');
+UPDATE wp_posts SET post_content = REPLACE (post_content, 'http://reed-hill.com', 'http://localhost:8888/RH/rh-app');
+UPDATE wp_postmeta SET meta_value = REPLACE (meta_value, 'http://reed-hill.com','http://localhost:8888/RH/rh-app');

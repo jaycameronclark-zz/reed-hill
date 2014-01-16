@@ -6,6 +6,18 @@ header.masthead{
 	min-height: 86px;
 	height: auto;
 	background: $brand-dark-gray;
+
+	a.logo{
+		text-decoration: none;
+		outline: none;
+		img{
+	    @include media-query(palm){ 
+	      width: 80%;
+	      height: 80%;
+	    }
+    }
+	}
+	
 //WORK \ SHOP	
 	.page-title{
 		ul{
@@ -26,6 +38,9 @@ header.masthead{
 				&:hover{
 					color: $brand-off-white;
 				}
+          @include media-query(palm){ 
+            font-size: 14px;
+          }
 			}
 			&.current_page_item:first-child a,
 			&.current-page-ancestor:first-child a{
@@ -34,6 +49,9 @@ header.masthead{
 				text-transform: uppercase;
 				text-decoration: none;
 				padding: 0;
+          @include media-query(palm){ 
+            font-size: 16px;
+          }
 			}
 			&.current_page_item:last-child a,
 			&.current-page-ancestor:last-child a{
@@ -42,6 +60,9 @@ header.masthead{
 				text-transform: uppercase;
 				text-decoration: none;
 				padding: 0;
+				  @include media-query(palm){ 
+            font-size: 16px;
+          }
 			}
 			&:last-child{
 				a{
@@ -70,10 +91,13 @@ header.masthead{
 				&:hover{
 					color: $brand-off-white;
 				}
+        @include media-query(palm){ 
+          font-size: 11px;
+        }
 			}
 		}
 		ul.sub-sub-menu{
-			padding-bottom: $base-line-height;
+			//padding-bottom: 12px;
 			padding-right: $base-line-height;
 			li{
 				margin-right: 0px;
@@ -117,6 +141,9 @@ header.masthead{
 			ul{
 				list-style-type: none;
 				margin: 4px 2px 0 0;
+				  @include media-query(palm){ 
+            margin: 0px 2px 0 0;
+          }
 			}
 			li{
 				font-family: 'museo_sans100', sans-serif;
@@ -163,11 +190,9 @@ header.masthead{
 				color: $brand-off-white;
 				font-size: 0.8em;
 				font-style: normal;
-
 				&:nth-child(2){
 					font-style: italic;
 				}
-
 				a{
 					font-family: 'museo_sans100', sans-serif;
 					color: $brand-light-navs;
@@ -186,7 +211,6 @@ header.masthead{
 							margin-right: 4px;
 						}
 					}
-
 					&:hover{
 						color: $brand-off-white;
 					}
@@ -194,7 +218,35 @@ header.masthead{
 			}
 		}
 	}
+	.other-breadcrumb{
+		padding-top: 4px;
+		ul{
+			margin-left: 2px;
+			padding-bottom: $base-line-height;
+			padding-right: $base-line-height;
+			li{
+				font-family: 'museo_sans100', sans-serif;
+				text-transform: uppercase!important;
+				color: $brand-off-white;
+				font-size: 0.8em;
+				font-style: italic!important;
+					&:first-child{
+						&:before{
+							font-style: italic;
+							content: " \203A";
+							vertical-align: baseline;
+							font-size: 1.2em;
+							color: $brand-off-white;
+							margin-left: 0;
+							margin-right: 4px;
+						}
+					}
+			}
+		}
+	}
+
 }
+
 //PAGER
 nav.pager{
 	margin-left: 4px;

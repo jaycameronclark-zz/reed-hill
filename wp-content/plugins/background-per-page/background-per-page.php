@@ -114,7 +114,7 @@ function add_background_per_page(){
 		
 			<?php echo 'body'; ?>, <?php echo $element; ?>.custom-background  { 
 				<?php if($src != ''){ ?>
-					background: url('<?php echo $src; ?>') no-repeat center center fixed; 
+					background: url('<?php echo $src; ?>') no-repeat center center; 
 					-webkit-background-size: cover;
 					-moz-background-size: cover;
 					-o-background-size: cover;

@@ -1,22 +1,25 @@
+# Created by Redirection Module: Apache
+# Sun, 15 Dec 2013 20:18:46 +0000
+# Redirection 2.3.3 - http://urbangiraffe.com/plugins/redirection/
+
+<Files .htaccess,.svn>
+order allow,deny
+deny from all
+</Files>
+Options +FollowSymlinks
+
+<IfModule mod_rewrite.c>
+</IfModule>
+
+# End of Redirection
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /
+RewriteBase /RH/rh-app/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+RewriteRule . /RH/rh-app/index.php [L]
 </IfModule>
-# END WordPress
 
-
-# BEGIN WordPress
-#<IfModule mod_rewrite.c>
-#RewriteEngine On
-#RewriteBase /RH/rh-app/
-#RewriteRule ^index\.php$ - [L]
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteRule . /RH/rh-app/index.php [L]
-#</IfModule>
 # END WordPress
