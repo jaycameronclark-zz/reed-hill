@@ -4,7 +4,6 @@
 
 
 function shadowBox(){
-
 	var $overlay = $("#shadow"),
 			$selector = $("article.tile");
 
