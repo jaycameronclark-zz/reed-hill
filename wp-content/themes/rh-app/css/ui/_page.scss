@@ -29,14 +29,14 @@ section {
           &:first-child .title{
             color: #414042;
             text-shadow: 1px 1px 1px #F8F9F9;
-            background: #ccc7c2; /* Old browsers */
-            background: -moz-linear-gradient(left,  #ccc7c2 0%, #a7a3a0 23%, #e0e1e2 48%, #a7a3a0 76%, #a7a9ac 100%); /* FF3.6+ */
-            background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ccc7c2), color-stop(23%,#a7a3a0), color-stop(48%,#e0e1e2), color-stop(76%,#a7a3a0), color-stop(100%,#a7a9ac)); /* Chrome,Safari4+ */
-            background: -webkit-linear-gradient(left,  #ccc7c2 0%,#a7a3a0 23%,#e0e1e2 48%,#a7a3a0 76%,#a7a9ac 100%); /* Chrome10+,Safari5.1+ */
-            background: -o-linear-gradient(left,  #ccc7c2 0%,#a7a3a0 23%,#e0e1e2 48%,#a7a3a0 76%,#a7a9ac 100%); /* Opera 11.10+ */
-            background: -ms-linear-gradient(left,  #ccc7c2 0%,#a7a3a0 23%,#e0e1e2 48%,#a7a3a0 76%,#a7a9ac 100%); /* IE10+ */
-            background: linear-gradient(to right,  #ccc7c2 0%,#a7a3a0 23%,#e0e1e2 48%,#a7a3a0 76%,#a7a9ac 100%); /* W3C */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccc7c2', endColorstr='#a7a9ac',GradientType=1 ); /* IE6-9 */
+            background: #a7a9ac;
+            background: -moz-linear-gradient(left, #a7a9ac 0%, #e0e1e2 40%, #e0e1e2 50%, #e0e1e2 60%, #a7a9ac 100%);
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,#a7a9ac), color-stop(40%,#e0e1e2), color-stop(50%,#e0e1e2), color-stop(60%,#e0e1e2), color-stop(100%,#a7a9ac));
+            background: -webkit-linear-gradient(left, #a7a9ac 0%,#e0e1e2 40%,#e0e1e2 50%,#e0e1e2 60%,#a7a9ac 100%);
+            background: -o-linear-gradient(left, #a7a9ac 0%,#e0e1e2 40%,#e0e1e2 50%,#e0e1e2 60%,#a7a9ac 100%);
+            background: -ms-linear-gradient(left, #a7a9ac 0%,#e0e1e2 40%,#e0e1e2 50%,#e0e1e2 60%,#a7a9ac 100%);
+            background: linear-gradient(to right, #a7a9ac 0%,#e0e1e2 40%,#e0e1e2 50%,#e0e1e2 60%,#a7a9ac 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7a9ac', endColorstr='#a7a9ac',GradientType=1 );
           }
         }
 
@@ -50,20 +50,20 @@ section {
           display: table;
           padding-left: 12px;
           font-size: 12px;
-          color: #a7a9ab;
+          color: #aeb0b2;
           border-right: 1px solid $brand-dark-gray;
           border-bottom: 1px solid $brand-dark-gray;
-          -webkit-box-shadow:  0px -4px 4px 0px rgba(0, 0, 0, 0.4);
-          box-shadow:  0px -4px 4px 0px rgba(0, 0, 0, 0.4);
-          text-shadow: 1px 1px 1px $brand-dark-gray;
-          background: rgb(131,127,125); /* Old browsers */
-          background: -moz-linear-gradient(left,  rgba(131,127,125,1) 0%, rgba(81,77,79,1) 23%, rgba(131,127,125,1) 48%, rgba(81,77,79,1) 76%, rgba(131,127,125,1) 100%); /* FF3.6+ */
-          background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(131,127,125,1)), color-stop(23%,rgba(81,77,79,1)), color-stop(48%,rgba(131,127,125,1)), color-stop(76%,rgba(81,77,79,1)), color-stop(100%,rgba(131,127,125,1))); /* Chrome,Safari4+ */
-          background: -webkit-linear-gradient(left,  rgba(131,127,125,1) 0%,rgba(81,77,79,1) 23%,rgba(131,127,125,1) 48%,rgba(81,77,79,1) 76%,rgba(131,127,125,1) 100%); /* Chrome10+,Safari5.1+ */
-          background: -o-linear-gradient(left,  rgba(131,127,125,1) 0%,rgba(81,77,79,1) 23%,rgba(131,127,125,1) 48%,rgba(81,77,79,1) 76%,rgba(131,127,125,1) 100%); /* Opera 11.10+ */
-          background: -ms-linear-gradient(left,  rgba(131,127,125,1) 0%,rgba(81,77,79,1) 23%,rgba(131,127,125,1) 48%,rgba(81,77,79,1) 76%,rgba(131,127,125,1) 100%); /* IE10+ */
-          background: linear-gradient(to right,  rgba(131,127,125,1) 0%,rgba(81,77,79,1) 23%,rgba(131,127,125,1) 48%,rgba(81,77,79,1) 76%,rgba(131,127,125,1) 100%); /* W3C */
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#837f7d', endColorstr='#837f7d',GradientType=1 ); /* IE6-9 */
+          //-webkit-box-shadow:  0px -4px 4px 0px rgba(0, 0, 0, 0.4);
+          //box-shadow:  0px -4px 4px 0px rgba(0, 0, 0, 0.4);
+          //text-shadow: 1px 1px 1px $brand-dark-gray;
+          background: #837f7d;
+          background: -moz-linear-gradient(left, #837f7d 0%, #514d4f 40%, #514d4f 50%, #514d4f 60%, #837f7d 100%);
+          background: -webkit-gradient(linear, left top, right top, color-stop(0%,#837f7d), color-stop(40%,#514d4f), color-stop(50%,#514d4f), color-stop(60%,#514d4f), color-stop(100%,#837f7d));
+          background: -webkit-linear-gradient(left, #837f7d 0%,#514d4f 40%,#514d4f 50%,#514d4f 60%,#837f7d 100%);
+          background: -o-linear-gradient(left, #837f7d 0%,#514d4f 40%,#514d4f 50%,#514d4f 60%,#837f7d 100%);
+          background: -ms-linear-gradient(left, #837f7d 0%,#514d4f 40%,#514d4f 50%,#514d4f 60%,#837f7d 100%);
+          background: linear-gradient(to right, #837f7d 0%,#514d4f 40%,#514d4f 50%,#514d4f 60%,#837f7d 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#837f7d', endColorstr='#837f7d',GradientType=1 );
           
           span{
             display: table-cell;
@@ -85,14 +85,15 @@ section {
         padding: 0 0 0 0;
         margin: 0;
         .map-grid{
-          z-index: 0;
+
           span{
-            z-index: 0;
+
             width: 18px;
             height: 18px;
             background-image: url(./_/images/map-icon-sprite.png);
             background-position: 0 0; 
             i.title{
+              position:relative;
               z-index: 30;
               font-size: 9px;
               font-style: normal;
@@ -127,7 +128,7 @@ section {
           }
 
           span.dot{
-            z-index: 20;
+            
             background-position: -24px 0;
             position: absolute;
               &:hover{
@@ -240,16 +241,14 @@ section {
 
   .headline{
     height: 40px;
-    background: #ccc7c2;
-    background: -moz-linear-gradient(left, #ccc7c2 0%, #a7a3a0 14%, #e0e1e2 50%, #a7a3a0 87%, #ccc7c2 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ccc7c2), color-stop(14%,#a7a3a0), color-stop(50%,#e0e1e2), color-stop(87%,#a7a3a0), color-stop(100%,#ccc7c2));
-    background: -webkit-linear-gradient(left, #ccc7c2 0%,#a7a3a0 14%,#e0e1e2 50%,#a7a3a0 87%,#ccc7c2 100%);
-    background: -o-linear-gradient(left, #ccc7c2 0%,#a7a3a0 14%,#e0e1e2 50%,#a7a3a0 87%,#ccc7c2 100%);
-    background: -ms-linear-gradient(left, #ccc7c2 0%,#a7a3a0 14%,#e0e1e2 50%,#a7a3a0 87%,#ccc7c2 100%);
-    background: linear-gradient(to right, #ccc7c2 0%,#a7a3a0 14%,#e0e1e2 50%,#a7a3a0 87%,#ccc7c2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccc7c2', endColorstr='#ccc7c2',GradientType=1 );
-    -webkit-box-shadow:  0px -4px 6px 0px rgba(0, 0, 0, 0.1);
-    box-shadow:  0px -4px 6px 0px rgba(0, 0, 0, 0.1);
+    background: #a7a9ac;
+    background: -moz-linear-gradient(left, #a7a9ac 0%, #e0e1e2 40%, #e0e1e2 50%, #e0e1e2 60%, #a7a9ac 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#a7a9ac), color-stop(40%,#e0e1e2), color-stop(50%,#e0e1e2), color-stop(60%,#e0e1e2), color-stop(100%,#a7a9ac));
+    background: -webkit-linear-gradient(left, #a7a9ac 0%,#e0e1e2 40%,#e0e1e2 50%,#e0e1e2 60%,#a7a9ac 100%);
+    background: -o-linear-gradient(left, #a7a9ac 0%,#e0e1e2 40%,#e0e1e2 50%,#e0e1e2 60%,#a7a9ac 100%);
+    background: -ms-linear-gradient(left, #a7a9ac 0%,#e0e1e2 40%,#e0e1e2 50%,#e0e1e2 60%,#a7a9ac 100%);
+    background: linear-gradient(to right, #a7a9ac 0%,#e0e1e2 40%,#e0e1e2 50%,#e0e1e2 60%,#a7a9ac 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7a9ac', endColorstr='#a7a9ac',GradientType=1 );
 
     p{
       font-size: 14px;
@@ -260,6 +259,7 @@ section {
       font-style: italic;
       text-shadow: 1px 1px 1px #F8F9F9;
       &:before{
+        padding-right: px;
         font-size: 20px;
         font-style: normal;
         color: $brand-red;
@@ -271,7 +271,7 @@ section {
     line-height: 40px;
     display: inline-block;
     a{
-      text-shadow: 1px 1px 1px #888888;
+      //text-shadow: 1px 1px 1px #888888;
       font-size: 11px;
       font-style: italic;
       text-decoration: none;
@@ -298,7 +298,7 @@ footer{
   font-size: 1em;
   font-weight: lighter;
   .footer-copyright{
-    color: $brand-light-text;
+    color: darken($brand-light-text,10%);
     font-size: .5em;
   }
   .phone-number{

@@ -7,7 +7,7 @@ Template Name: Client Landing
 <?php get_header(); ?>
 
 <div class="grid--full">
-  <section class="main-container min-height" id="<?php the_ID();?>">
+  <section class="main-container" id="<?php the_ID();?>">
 <?php echo "<!--"; ?>
 
 
