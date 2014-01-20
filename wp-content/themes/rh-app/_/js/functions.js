@@ -50,39 +50,34 @@ function contactModal(){
 
 function contactForm(){
 
-	hideshow('loading',1);
-
-		var name = $("#formName").val();
-		var email = $("#formEmail").val();
-		var message = $("#formMessage").val();
-		var country = $("#formCountry").val();
-		var honey = $("#honeyPot").val();
-		var dataString = 'name='+ name + '&email=' + email + '&message=' + message + '&country=' + country + '&honey=' + honey;
+		var form = $("#contactForm").serialize();
 
 		$.ajax({
 			type: "POST",
 			url: customPath + "/inc/form_process.php", //echoed in the dom
-			data: dataString,
-			dataType: 'json',
+			data: form,
+			dataType: "json",
+
 				success: function(data){
 
 					if (data.status == '0'){
-						//console.log(data);
+
 							$("#messages").slideDown('slow', function(){
+								$("#loading").hide();
+								$("#formSubmit").show();
 								$(this).addClass("failure").html(data.message);
 								$(this).delay(2000).fadeOut(4000);
 							});
-						hideshow('loading',0);
 					}
 					else {
-						//console.log(data);
+
+						$("#formSubmit").show();
 						$("#contactForm")[0].reset();
+						$("#loading").hide();
 						$("#contactForm").fadeOut('slow');
 						$("#messages").addClass("success").html(data.message).show();
 						$("#messages").delay(6000).fadeOut(4000);
 						$("#contactForm").fadeIn('slow');
-
-						hideshow('loading',0);
 					}
 
 				},
@@ -95,6 +90,7 @@ function contactForm(){
 						console.log('Internal Server Error [500].');
 					} else if (exception === 'parsererror') {
 						console.log('Requested JSON parse failed.');
+						console.log(exception);
 					} else if (exception === 'timeout') {
 						console.log('Time out error.');
 					} else if (exception === 'abort') {
@@ -102,14 +98,9 @@ function contactForm(){
 					} else {
 						console.log('Uncaught Error.\n' + jqXHR.responseText);
 					}
-					hideshow('loading',0);
+
 				}
 		});
-}
-
-function hideshow(el,act) {
-	if(act) $('#'+el).css('visibility','visible');
-	else $('#'+el).css('visibility','hidden');
 }
 
 function locationMap(){
@@ -134,9 +125,11 @@ $(function(){
 	locationMap();
 	contactModal();
 
-	$("#contactForm").submit(function(e) {
-		contactForm();
+	$("#formSubmit").click(function(e) {
 		e.preventDefault();
+		$(this).hide();
+		$("#loading").show();
+		contactForm();
 	});
 
 });

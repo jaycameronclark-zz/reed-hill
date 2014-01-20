@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html>
 
 <head data-template-set="rh-app-theme">
 

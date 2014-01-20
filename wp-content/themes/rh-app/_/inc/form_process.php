@@ -2,7 +2,7 @@
 //CUSTOM RH CONTACT FORM
 //Jay Clark @ Pivvt Media
 
-if($_POST){
+if(isset($_POST['email'])) {
 
 //DEFINE SOME VARS
 	$to = 'jaycameronclark@gmail.com';
@@ -10,13 +10,13 @@ if($_POST){
 
 	$name = $_POST['name'];
 	$email = $_POST['email'];
+	$phone = $_POST['phone'];
 	$country = $_POST['country'];
-	$message = $_POST['message'];
-	$honey = $_POST['honey'];
+	$comments = $_POST['comments'];
 	
 
 		//CHECK FIELDS HAVE CONTENT
-		if( empty($name) || empty($country) || empty($email) || empty($message) ) {
+		if( empty($name) || empty($phone) || empty($country) || empty($email) || empty($comments) ) {
 			die(msg(0,"All the fields are required."));
 		}
 
@@ -25,21 +25,17 @@ if($_POST){
 			die(msg(0,"You haven't provided a valid email address."));
 		}
 
-		//CHECK THE HONEYPOT
-		if($honey) {
-			die(msg(0,"You are a gutless robot."));
-		}
-
 		// IF CHECKS OUT, SEND IT
 		else {
-			$header = "From: $name <$email>";
+			$headers = "From:" . $_POST['name'] . "(" . $_POST['email'] . ")";
 			$content = "Details: $country";
-		  $sent = mail( $to, $subject, $message, $header, $content );
+		  mail( $to, $subject, $comments, $headers, $content );
+		  $result = array();
+			$result['status'] = 'success';
+			$result['message'] = 'Thanks for contacting us. We will be in touch shortly';
+			header("Content-Type: application/json; charset=utf-8", true);
+			echo json_encode($result);
 		}
-		//SUCCESS CALLBACK
-	  if($sent){
-	  	die(msg(1,"Thanks for contacting us. We'll be in touch shortly!"));
-	  }
 
 }
 //RETURN MSG STRING TO JSON
