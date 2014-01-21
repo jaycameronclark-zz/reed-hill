@@ -65,8 +65,8 @@
 							<?php wp_nav_menu( array('theme_location' => 'work', 'menu_class' => 'sub-menu') ); ?>
 							
 							<hr class="push--right">
-							<div class="other-breadcrumb">
-	    					<?php if(function_exists('the_other_breadcrumb')) { the_other_breadcrumb(); } ?>
+							<div class="client-breadcrumb">
+	    					<?php if(function_exists('the_client_breadcrumb')) { the_client_breadcrumb(); } ?>
 	    				</div>
 
 							<!--INDUSTRY SUB PAGE-->

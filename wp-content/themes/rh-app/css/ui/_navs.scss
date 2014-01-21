@@ -244,6 +244,43 @@ header.masthead{
 			}
 		}
 	}
+	.client-breadcrumb{
+		padding-top: 4px;
+		ul{
+			margin-left: 2px;
+			padding-bottom: $base-line-height;
+			padding-right: $base-line-height;
+			li{
+				font-family: 'museo_sans100', sans-serif;
+				text-transform: uppercase!important;
+				color: $brand-off-white;
+				font-size: 0.8em;
+				font-style: italic!important;
+				a{
+					font-family: 'museo_sans100', sans-serif;
+					text-transform: uppercase!important;
+					color: $brand-light-navs;
+					font-size: 1em;
+					font-style: normal;
+					&:hover{
+						color: $brand-off-white; 
+					}
+				}
+
+					&.current{
+							&:before{
+							font-style: italic;
+							content: " \203A";
+							vertical-align: baseline;
+							font-size: 1.2em;
+							color: $brand-off-white;
+							margin-left: 4px;
+							margin-right: 4px;
+						}
+					}
+			}
+		}
+	}
 
 }
 

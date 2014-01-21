@@ -113,6 +113,41 @@ add_action( 'init', 'register_rh_app_menus' );
 /*-------------------------------------------------------------------------------------------*/
 /* CUSTOM BREADCRUMBS */
 /*-------------------------------------------------------------------------------------------*/
+function the_breadcrumb() {
+   $current = $post->ID;
+   $parent = $post->post_parent;
+   
+   echo '<ul class="">';
+   if (!is_home()) {
+      if (is_category() || is_single() || is_archive()) {
+         the_category('title_li=');
+         if (is_single()) {
+            echo " <li>";
+            the_title();
+            echo "</li>";
+         }
+      } elseif (is_page()) {
+         if( count(get_post_ancestors($post->ID)) == 3 ){
+            echo "<li><a href='";
+            echo get_permalink($grandparent_get->post_parent);
+            echo "'>";
+            echo get_the_title($grandparent);
+            echo "</a>";
+            echo "</li>";
+         }
+         echo '<li class="current">';
+         echo the_title();
+         echo '</li>';
+      }
+   } else if ( is_home() ) {
+      echo '<li><a href="';
+      echo get_option('home');
+      echo '">';
+      echo 'Blog';
+      echo "</a></li>";
+   };
+   echo '</ul>';
+}
 
 function the_other_breadcrumb() {
    $current = $post->ID;
@@ -121,15 +156,35 @@ function the_other_breadcrumb() {
    echo '<ul>';
    if (!is_home()) {
     if (is_page()) {
-      if( count(get_post_ancestors($post->ID)) == 3 ){
+       echo '<li class="current">';
+       echo the_title();
+       echo '</li>';
+    }
+   } 
+   echo '</ul>';
+}
+function the_client_breadcrumb() {
+  $current = $post->ID;
+  $parent = $post->post_parent;
+  $grandparent_get = get_post($parent);
+  $grandparent = $grandparent_get->post_parent;
+
+   echo '<ul>';
+   if (!is_home()) {
+    if (is_page()) {
+      if( count(get_post_ancestors($post->ID)) == 2 ){
+        echo '<li class="current">';
+        echo the_title();
+        echo '</li>';
+      }else if( count(get_post_ancestors($post->ID)) == 3 ){
         echo "<li><a href='";
-        echo get_permalink($post->post_parent);
+        echo get_permalink($grandparent);
         echo "'>";
-        echo get_the_title($parent);
+        echo get_the_title($grandparent);
         echo "</a>";
         echo "</li>";
         echo '<li class="current">';
-        echo 'TITLE13ffff';
+        echo the_title();
         echo '</li>';
       }
     }
