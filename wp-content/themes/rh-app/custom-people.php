@@ -51,6 +51,8 @@ Template Name: People
         </div>
 
       <div class="headline">
+        <div class="grid__item two-eighths bar-padding">
+        </div>
         <div class="grid__item two-eighths">
         <nav class="pager push--one-tenth">
           <?php if (!empty($prevID)) { ?>
@@ -62,7 +64,7 @@ Template Name: People
           <?php } ?>
         </nav>
         </div><!--
-        --><div class="grid__item six-eighths">
+        --><div class="grid__item three-eighths">
           <?php the_excerpt(); ?>
         </div>
       </div>
