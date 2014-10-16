@@ -23,7 +23,7 @@ Template Name: People
           <div class="grid__item one-whole palm-one-whole">
           <article class="content soft">
 
-            <?php 
+            <?php
             $pagelist = get_pages('sort_column=post_title&sort_order=asc');
             $pages = array();
             foreach ($pagelist as $page) {
@@ -54,11 +54,11 @@ Template Name: People
         <div class="grid__item two-eighths">
         <nav class="pager push--one-tenth">
           <?php if (!empty($prevID)) { ?>
-            <div class="page-left"><a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>">Back<span class="arrow-left"></span></a></div>
+            <div class="page-left"><a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>">Previous<span class="arrow-left"></span></a></div>
           <?php } ?>
           <?php if (!empty($nextID)) { ?>
             <div class="page-right">
-              <a href="<?php echo get_permalink($nextID); ?>" title="<?php echo get_the_title($nextID); ?>"><span class="arrow-right"></span>Next</a></div>
+              <a href="<?php echo get_permalink($nextID); ?>" title="<?php echo get_the_title($nextID); ?>"><span class="arrow-right"></span>Next Person</a></div>
           <?php } ?>
         </nav>
         </div><!--
@@ -69,7 +69,7 @@ Template Name: People
       </figure>
     </section>
 </div>
- 
+
 
 
 <?php get_footer(); ?>
