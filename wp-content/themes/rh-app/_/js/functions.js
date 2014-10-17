@@ -4,29 +4,34 @@
 
 
 function shadowBox(){
-	var $overlay = $("#shadow"),
-			$selector = $("article.tile");
+	var width = $(window).width();
+	if(width < 900) {
+		return;
+	}
+	else {
+		var $overlay = $("#shadow"),
+				$selector = $("article.tile");
 
-			$overlay.css("height", $(document).height());
-			$overlay.hide();
+				$overlay.css("height", $(document).height());
+				$overlay.hide();
 
-			var showOverlay = function(){
-				$overlay.fadeIn(400);
-				$(this).css("z-index", "2000");
-			};
+				var showOverlay = function(){
+					$overlay.fadeIn(400);
+					$(this).css("z-index", "2000");
+				};
 
-			var hideOverlay = function(){
-				$overlay.toggle();
-				$(this).css("z-index", "0");
-			};
+				var hideOverlay = function(){
+					$overlay.toggle();
+					$(this).css("z-index", "0");
+				};
 
-			//use hoverintent plugin
-			$selector.hoverIntent({
-				over: showOverlay,
-				out: hideOverlay,
-				selector: $("article.tile")
-			});
-
+				//use hoverintent plugin
+				$selector.hoverIntent({
+					over: showOverlay,
+					out: hideOverlay,
+					selector: $("article.tile")
+				});
+		}
 }
 
 function imageGallery(){
@@ -133,4 +138,3 @@ $(function(){
 	});
 
 });
-

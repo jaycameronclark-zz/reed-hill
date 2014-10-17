@@ -29,20 +29,20 @@ Template Name: Client Landing
   'offset' => 0,
   'post_type' => 'page',
   'post_status' => 'publish'
-); 
+);
 
   $subpages = get_pages($args);
 
-  foreach( $subpages as $page ) {    
+  foreach( $subpages as $page ) {
     $content = $page->post_content;
 
     $content = apply_filters( 'the_content', $content );
 
   ?>
-    <?php echo "-->"; ?><a href="<?php echo get_page_link( $page->ID ); ?>"><article class="grid__item one-quarter palm-one-half tile">
-    <?php echo get_the_post_thumbnail($page->ID, 'client-thumb'); ?> 
+    <?php echo "-->"; ?><article class="grid__item one-quarter palm-one-half tile"><a href="<?php echo get_page_link( $page->ID ); ?>" class="thumbLink">
+    <?php echo get_the_post_thumbnail($page->ID, 'client-thumb'); ?>
     <div class="title one-whole"><span><?php echo $page->post_title; ?></span></div>
-    </article></a><?php echo "<!--"; ?>
+  </a></article><?php echo "<!--"; ?>
   <?php } ?>
 
 <?php endwhile; ?>

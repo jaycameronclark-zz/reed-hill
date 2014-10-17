@@ -66,6 +66,10 @@
 								</div>
 							</div>
 							<hr class="push--right">
+							<div class="socialDiv float--right push--right locations">
+								<a href="https://twitter.com/ReedHillWorks"><img src="<?php bloginfo( 'template_directory' ); ?>/_/images/twitter.png" class="social" onmouseover="this.src='<?php bloginfo( 'template_directory' ); ?>/_/images/twitter-hover.png';" onmouseout="this.src='<?php bloginfo( 'template_directory' ); ?>/_/images/twitter.png';"></a>
+								<a href="http://www.pinterest.com/ReedHillWorks/"><img src="<?php bloginfo( 'template_directory' ); ?>/_/images/pinterest.png" class="social" onmouseover="this.src='<?php bloginfo( 'template_directory' ); ?>/_/images/pinterest-hover.png';" onmouseout="this.src='<?php bloginfo( 'template_directory' ); ?>/_/images/pinterest.png';"></a>
+							</div>
 						<!--CLIENT PAGE-->
 							<?php if (is_page('client') ) { ?>
 							<?php wp_nav_menu( array('theme_location' => 'work', 'menu_class' => 'sub-menu') ); ?>
@@ -73,7 +77,7 @@
 						<!--CLIENT SUB PAGE-->
 							<?php } elseif ( is_tree(742) ) { ?>
 							<?php wp_nav_menu( array('theme_location' => 'work', 'menu_class' => 'sub-menu') ); ?>
-
+						</div>
 							<hr class="push--right">
 							<div class="client-breadcrumb">
 	    					<?php if(function_exists('the_client_breadcrumb')) { the_client_breadcrumb(); } ?>
