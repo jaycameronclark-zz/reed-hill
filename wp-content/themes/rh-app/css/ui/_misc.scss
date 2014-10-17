@@ -5,3 +5,58 @@
 .position-relative{
 	position: relative;
 }
+
+.short-lines {
+	line-height: 20px;
+}
+
+@media(max-width: 900px) {
+	.desktop-only {
+		display: none;
+	}
+	.mobile-wide {
+		width: 100% !important;
+		display: block;
+	}
+	.mobile-maps {
+		img {
+			width: 100% !important;
+			display: block;
+		}
+	}
+}
+
+
+@media(max-width: 600px) {
+	.height800 {
+		height: 400px;
+	}
+
+	.height1050 {
+		height: 1050px;
+	}
+
+	.full-width {
+		img {
+			width: 100% !important;
+		}
+	}
+
+	.star {
+		display: none !important;
+	}
+
+	.dot {
+		display: none !important;
+	}
+}
+
+@media(max-width: 500px) {
+	.height800 {
+		height: 800px;
+	}
+
+	.height1050 {
+		height: 1050px;
+	}
+}

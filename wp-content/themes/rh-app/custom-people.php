@@ -19,7 +19,7 @@ Template Name: People
 <div class="grid--full">
     <section class="main-container" id="post-<?php the_ID(); ?>">
       <figure class="grid__item one-whole palm-one-whole offices rh-media">
-        <div class="map-grid">
+        <div class="height800 map-grid">
           <div class="grid__item one-whole palm-one-whole">
           <article class="content soft">
 
@@ -47,24 +47,26 @@ Template Name: People
             <?php endif; ?>
           </article>
           </div>
+          <div class="full-width">
           <?php echo get_the_post_thumbnail($page->ID, 'inner-background'); ?>
+          </div>
         </div>
 
       <div class="headline">
-        <div class="grid__item two-eighths bar-padding">
+        <div class="grid__item one-fifth desktop-only">
         </div>
-        <div class="grid__item two-eighths">
+        <div class="grid__item two-eighths mobile-wide">
         <nav class="pager push--one-tenth">
           <?php if (!empty($prevID)) { ?>
-            <div class="page-left"><a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>">Previous<span class="arrow-left"></span></a></div>
+            <div class="page-left short-lines"><a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>">Previous<span class="arrow-left"></span></a></div>
           <?php } ?>
           <?php if (!empty($nextID)) { ?>
-            <div class="page-right">
+            <div class="page-right short-lines">
               <a href="<?php echo get_permalink($nextID); ?>" title="<?php echo get_the_title($nextID); ?>"><span class="arrow-right"></span>Next Person</a></div>
           <?php } ?>
         </nav>
         </div><!--
-        --><div class="grid__item three-eighths">
+        --><div class="grid__item three-eighths mobile-wide mobile-hidden">
           <?php the_excerpt(); ?>
         </div>
       </div>

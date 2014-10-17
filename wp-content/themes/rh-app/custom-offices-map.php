@@ -9,7 +9,7 @@ Template Name: Offices Map
 <div class="grid--full">
 	<section class="main-container" id="post-<?php the_ID(); ?>">
 		<figure class="grid__item one-whole palm-one-whole offices">
-			<div class="map-grid">
+			<div class="map-grid height800">
 				<div class="grid__item one-whole palm-one-whole">
 				<article class="content soft">
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -19,7 +19,9 @@ Template Name: Offices Map
 				</article>
 				</div>
 
-				<?php echo get_the_post_thumbnail($page->ID, 'inner-background'); ?> 
+				<div class="mobile-wide mobile-maps">
+					<?php echo get_the_post_thumbnail($page->ID, 'inner-background'); ?>
+				</div>
 
 				<span class="star denver"><i class="title">Denver, CO</i></span>
 				<span class="star phoenix"><i class="title">Phoenix, AZ</i></span>
@@ -42,5 +44,5 @@ Template Name: Offices Map
 		</figure>
 	</section>
 </div>
- 
+
 <?php get_footer(); ?>

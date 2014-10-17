@@ -168,7 +168,7 @@ section {
             left: 232px;
             z-index: 6;
             p{
-              font-size: 18px;
+              font-size: 14px;
               font-weight: normal;
               font-family: museo_sans100;
               line-height: 25px;
@@ -251,6 +251,7 @@ section {
   .headline{
     height: 40px;
     background: #a7a9ac;
+    line-height: 20px !important;
     background: -moz-linear-gradient(left, #a7a9ac 0%, #e0e1e2 40%, #e0e1e2 50%, #e0e1e2 60%, #a7a9ac 100%);
     background: -webkit-gradient(linear, left top, right top, color-stop(0%,#a7a9ac), color-stop(40%,#e0e1e2), color-stop(50%,#e0e1e2), color-stop(60%,#e0e1e2), color-stop(100%,#a7a9ac));
     background: -webkit-linear-gradient(left, #a7a9ac 0%,#e0e1e2 40%,#e0e1e2 50%,#e0e1e2 60%,#a7a9ac 100%);
@@ -262,10 +263,6 @@ section {
 
     @media(max-width: 900px) {
       height: auto;
-    }
-
-    .bar-padding {
-      width: 20% !important;
     }
 
     p{
@@ -319,6 +316,7 @@ section {
   max-width: auto;
   @media(max-width: 900px) {
     overflow: hidden !important;
+    height: 800px;
   }
 
     img {
@@ -330,7 +328,7 @@ section {
   .content {
     @media(max-width: 900px) {
       left: 10px !important;
-      top: 30px !important;
+      top: 18% !important;
     }
   }
 }

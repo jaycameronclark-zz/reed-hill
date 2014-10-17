@@ -8,7 +8,7 @@ Template Name: Office
 
 <script>
 	$(function(){
-		
+
 		var dots = $(".star, .dot");
 		var title = $(dots).find(">:first-child");
 		title.hide();
@@ -17,7 +17,7 @@ Template Name: Office
 		 	$(this).hover(function(){
 		    title = $(this).find('.title');
 		    title.fadeIn();
-		 }, 
+		 },
 		 function() {
 		 	title.fadeOut();
 		 });
@@ -33,7 +33,7 @@ Template Name: Office
 <div class="grid--full">
 		<section class="main-container" id="post-<?php the_ID(); ?>">
 			<figure class="grid__item one-whole palm-one-whole offices">
-				<div class="map-grid">
+				<div class="map-grid height800">
 					<div class="grid__item one-whole palm-one-whole">
 					<article class="content soft">
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -41,14 +41,15 @@ Template Name: Office
 						<?php endwhile; ?>
 						<?php endif; ?>
 					</article>
+					</div >
+					<div class="full-width">
+						<?php echo get_the_post_thumbnail($page->ID, 'inner-background'); ?>
 					</div>
-					
-					<?php echo get_the_post_thumbnail($page->ID, 'inner-background'); ?>
-					
+
 				</div>
 			</figure>
 		</section>
 </div>
- 
+
 
 <?php get_footer(); ?>
