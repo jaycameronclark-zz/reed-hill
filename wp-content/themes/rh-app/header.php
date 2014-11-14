@@ -39,6 +39,7 @@
 	  ga('send', 'pageview');
 
 	</script>
+	<meta name="p:domain_verify" content="ccdceb9e06e1a89535f8ee085053d482"/>
 </head>
 
 <body class="stretched-background">
@@ -67,8 +68,8 @@
 							</div>
 							<hr class="push--right">
 							<div class="socialDiv float--right push--right locations">
-								<a href="https://twitter.com/ReedHillWorks"><img src="<?php bloginfo( 'template_directory' ); ?>/_/images/twitter.png" class="social" onmouseover="this.src='<?php bloginfo( 'template_directory' ); ?>/_/images/twitter-hover.png';" onmouseout="this.src='<?php bloginfo( 'template_directory' ); ?>/_/images/twitter.png';"></a>
-								<a href="http://www.pinterest.com/ReedHillWorks/"><img src="<?php bloginfo( 'template_directory' ); ?>/_/images/pinterest.png" class="social" onmouseover="this.src='<?php bloginfo( 'template_directory' ); ?>/_/images/pinterest-hover.png';" onmouseout="this.src='<?php bloginfo( 'template_directory' ); ?>/_/images/pinterest.png';"></a>
+								<a href="https://twitter.com/ReedHillWorks" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/_/images/twitter.png" class="social" onmouseover="this.src='<?php bloginfo( 'template_directory' ); ?>/_/images/twitter-hover.png';" onmouseout="this.src='<?php bloginfo( 'template_directory' ); ?>/_/images/twitter.png';"></a>
+								<a href="http://www.pinterest.com/ReedHillWorks/" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/_/images/pinterest.png" class="social" onmouseover="this.src='<?php bloginfo( 'template_directory' ); ?>/_/images/pinterest-hover.png';" onmouseout="this.src='<?php bloginfo( 'template_directory' ); ?>/_/images/pinterest.png';"></a>
 							</div>
 						<!--CLIENT PAGE-->
 							<?php if (is_page('client') ) { ?>
